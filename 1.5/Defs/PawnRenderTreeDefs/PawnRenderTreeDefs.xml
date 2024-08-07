@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnRenderTreeDef>
+    <defName>Laetitia</defName>
+    <root Class="PawnRenderNodeProperties_Parent">
+      <debugLabel>Root</debugLabel>
+      <tagDef>Root</tagDef>
+      <children>
+        <li>
+          <debugLabel>Body</debugLabel>
+          <tagDef>Body</tagDef>
+          <useRottenColor>true</useRottenColor>
+          <nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+          <children>
+            <!-- BodyUpper -->
+            <li Class="PawnRenderNodeProperties_Spastic">
+              <debugLabel>Laetitia_BodyUpper</debugLabel>
+              <linkedBodyPartsGroup>Laetitia_BodyUpper</linkedBodyPartsGroup>
+              <texPath>Things/Pawn/Laetitia/Attachments/Laetitia_BodyUpper</texPath>
+              <rotDrawMode>Fresh, Rotting</rotDrawMode>
+              <rotateFacing>false</rotateFacing>
+              <rotationRange>-3~3</rotationRange>
+              <durationTicksRange>30~60</durationTicksRange>
+              <nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+              <drawSize>1.3</drawSize>
+              <baseLayer>10</baseLayer>
+              <useRottenColor>true</useRottenColor>
+              <drawData>
+                <dataWest>
+                  <flip>true</flip>
+                </dataWest>
+              </drawData>
+            </li>
+            <!-- EyeLeft -->
+            <li Class="PawnRenderNodeProperties_Spastic">
+              <debugLabel>Laetitia_EyeLeft</debugLabel>
+              <linkedBodyPartsGroup>Laetitia_EyeLeft</linkedBodyPartsGroup>
+              <texPath>Things/Pawn/Laetitia/Attachments/Laetitia_EyeLeft</texPath>
+              <rotDrawMode>Fresh, Rotting</rotDrawMode>
+              <rotateFacing>false</rotateFacing>
+              <rotationRange>-1~1</rotationRange>
+              <durationTicksRange>30~60</durationTicksRange>
+              <nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+              <drawSize>1.3</drawSize>
+              <baseLayer>10</baseLayer>
+              <useRottenColor>true</useRottenColor>
+              <drawData>
+                <dataWest>
+                  <flip>true</flip>
+                </dataWest>
+              </drawData>
+            </li>
+            <!-- EyeRight -->
+            <li Class="PawnRenderNodeProperties_Spastic">
+              <debugLabel>Laetitia_EyeRight</debugLabel>
+              <linkedBodyPartsGroup>Laetitia_EyeRight</linkedBodyPartsGroup>
+              <texPath>Things/Pawn/Laetitia/Attachments/Laetitia_EyeRight</texPath>
+              <rotDrawMode>Fresh, Rotting</rotDrawMode>
+              <rotateFacing>false</rotateFacing>
+              <rotationRange>-1~1</rotationRange>
+              <durationTicksRange>30~60</durationTicksRange>
+              <nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+              <drawSize>1.3</drawSize>
+              <baseLayer>10</baseLayer>
+              <useRottenColor>true</useRottenColor>
+              <drawData>
+                <dataWest>
+                  <flip>true</flip>
+                </dataWest>
+              </drawData>
+            </li>
+            <!-- Head -->
+            <li Class="PawnRenderNodeProperties_Spastic">
+              <debugLabel>Laetitia_Head</debugLabel>
+              <linkedBodyPartsGroup>Laetitia_Head</linkedBodyPartsGroup>
+              <texPath>Things/Pawn/Laetitia/Attachments/Laetitia_Head</texPath>
+              <rotDrawMode>Fresh, Rotting</rotDrawMode>
+              <rotateFacing>false</rotateFacing>
+              <rotationRange>-2~2</rotationRange>
+              <durationTicksRange>30~60</durationTicksRange>
+              <nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+              <drawSize>1.3</drawSize>
+              <baseLayer>10</baseLayer>
+              <useRottenColor>true</useRottenColor>
+              <drawData>
+                <dataWest>
+                  <flip>true</flip>
+                </dataWest>
+              </drawData>
+            </li>
+            <!-- ArmLeft -->
+            <li Class="PawnRenderNodeProperties_Spastic">
+              <debugLabel>Laetitia_ArmLeft</debugLabel>
+              <linkedBodyPartsGroup>Laetitia_ArmLeft</linkedBodyPartsGroup>
+              <texPath>Things/Pawn/Laetitia/Attachments/Laetitia_ArmLeft</texPath>
+              <rotDrawMode>Fresh, Rotting</rotDrawMode>
+              <rotateFacing>false</rotateFacing>
+              <rotationRange>-2~2</rotationRange>
+              <durationTicksRange>30~60</durationTicksRange>
+              <nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+              <drawSize>1.3</drawSize>
+              <baseLayer>10</baseLayer>
+              <useRottenColor>true</useRottenColor>
+              <drawData>
+                <dataWest>
+                  <flip>true</flip>
+                </dataWest>
+              </drawData>
+            </li>
+            <!-- ArmRight -->
+            <li Class="PawnRenderNodeProperties_Spastic">
+              <debugLabel>Laetitia_ArmRight</debugLabel>
+              <linkedBodyPartsGroup>Laetitia_ArmRight</linkedBodyPartsGroup>
+              <texPath>Things/Pawn/Laetitia/Attachments/Laetitia_ArmRight</texPath>
+              <rotDrawMode>Fresh, Rotting</rotDrawMode>
+              <rotateFacing>false</rotateFacing>
+              <rotationRange>-2~2</rotationRange>
+              <durationTicksRange>30~60</durationTicksRange>
+              <nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+              <drawSize>1.3</drawSize>
+              <baseLayer>10</baseLayer>
+              <useRottenColor>true</useRottenColor>
+              <drawData>
+                <dataWest>
+                  <flip>true</flip>
+                </dataWest>
+              </drawData>
+            </li>
+            <!-- Skirt -->
+            <li Class="PawnRenderNodeProperties_Spastic">
+              <debugLabel>Laetitia_Skirt</debugLabel>
+              <linkedBodyPartsGroup>Laetitia_Skirt</linkedBodyPartsGroup>
+              <texPath>Things/Pawn/Laetitia/Attachments/Laetitia_Skirt</texPath>
+              <rotDrawMode>Fresh, Rotting</rotDrawMode>
+              <rotateFacing>false</rotateFacing>
+              <rotationRange>-3~3</rotationRange>
+              <durationTicksRange>30~60</durationTicksRange>
+              <nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+              <drawSize>1.3</drawSize>
+              <baseLayer>10</baseLayer>
+              <useRottenColor>true</useRottenColor>
+              <drawData>
+                <dataWest>
+                  <flip>true</flip>
+                </dataWest>
+              </drawData>
+            </li>
+            <!-- LegLeft -->
+            <li Class="PawnRenderNodeProperties_Spastic">
+              <debugLabel>Laetitia_LegLeft</debugLabel>
+              <linkedBodyPartsGroup>Laetitia_LegLeft</linkedBodyPartsGroup>
+              <texPath>Things/Pawn/Laetitia/Attachments/Laetitia_LegLeft</texPath>
+              <rotDrawMode>Fresh, Rotting</rotDrawMode>
+              <rotateFacing>false</rotateFacing>
+              <rotationRange>-2~2</rotationRange>
+              <durationTicksRange>30~60</durationTicksRange>
+              <nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+              <drawSize>1.3</drawSize>
+              <baseLayer>10</baseLayer>
+              <useRottenColor>true</useRottenColor>
+              <drawData>
+                <dataWest>
+                  <flip>true</flip>
+                </dataWest>
+              </drawData>
+            </li>
+            <!-- LegRight -->
+            <li Class="PawnRenderNodeProperties_Spastic">
+              <debugLabel>Laetitia_LegRight</debugLabel>
+              <linkedBodyPartsGroup>Laetitia_LegRight</linkedBodyPartsGroup>
+              <texPath>Things/Pawn/Laetitia/Attachments/Laetitia_LegRight</texPath>
+              <rotDrawMode>Fresh, Rotting</rotDrawMode>
+              <rotateFacing>false</rotateFacing>
+              <rotationRange>-2~2</rotationRange>
+              <durationTicksRange>30~60</durationTicksRange>
+              <nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+              <drawSize>1.3</drawSize>
+              <baseLayer>10</baseLayer>
+              <useRottenColor>true</useRottenColor>
+              <drawData>
+                <dataWest>
+                  <flip>true</flip>
+                </dataWest>
+              </drawData>
+            </li>
+          </children>
+        </li>
+        <li Class="PawnRenderNodeProperties_Carried">
+          <debugLabel>Carried thing</debugLabel>
+          <workerClass>PawnRenderNodeWorker_Carried</workerClass>
+        </li>
+      </children>
+    </root>
+  </PawnRenderTreeDef>
+
+</Defs>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <LCAnomalyLibrary.Defs.EntityCodexEntryDef>
+  	<defName>Laetitia</defName>
+    <label>Laetitia</label>
+    <description>.</description>
+    <uiIconPath>UI/CodexEntries/Laetitia</uiIconPath>
+    <category>HE</category>
+    <discoveryType>BecameVisible</discoveryType>
+    <linkedThings>
+      <li>Laetitia</li>
+    </linkedThings>
+    <!-- <discoveredResearchProjects>
+      <li>ExtractLaetitia</li>
+    </discoveredResearchProjects> -->
+    <orderInCategory>800</orderInCategory>
+  </LCAnomalyLibrary.Defs.EntityCodexEntryDef>
+
+</Defs>

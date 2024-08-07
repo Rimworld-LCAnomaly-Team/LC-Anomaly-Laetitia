@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="LC_EntityBase" Name="BaseLaetitia" Abstract="True">
+    <thingClass>Laetitia.Things.LC_LaetitiaPawn</thingClass>
+    <statBases>
+      <MoveSpeed>0</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>100</ComfyTemperatureMax>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MinimumContainmentStrength>0</MinimumContainmentStrength>
+      <StaggerDurationFactor>0</StaggerDurationFactor>
+      <ToxicResistance>1</ToxicResistance>
+    </statBases>
+    <race>
+      <body>Laetitia</body>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
+      <intelligence>ToolUser</intelligence>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <fleshType>EntityMechanical</fleshType>
+      <foodType>None</foodType>
+      <hasCorpse>false</hasCorpse>
+      <lifeExpectancy>1000</lifeExpectancy>
+      <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+      <soundCallIntervalRange>120~240</soundCallIntervalRange>
+      <disableIgniteVerb>true</disableIgniteVerb>
+      <trainability>None</trainability>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundDeath>Laetitia_Defeated</soundDeath>
+        </li>
+      </lifeStageAges>
+      <hediffGiverSets><li>AnomalyEntity</li></hediffGiverSets>
+    </race>
+    <comps>
+      <li Class="Laetitia.Comp.CompProperties_Laetitia">
+        <qliphothCountMax>-1</qliphothCountMax>
+        <studySucessRateBase>0.5</studySucessRateBase>
+        <shouldNotifyWhenEscape>false</shouldNotifyWhenEscape>
+        <ifProvideWarningPoints>true</ifProvideWarningPoints>
+        <customWarningPoints>-1</customWarningPoints>
+      </li>
+      <li Class="CompProperties_HoldingPlatformTarget">
+        <baseEscapeIntervalMtbDays>45</baseEscapeIntervalMtbDays>
+        <lookForTargetOnEscape>false</lookForTargetOnEscape>
+        <hasAnimation>false</hasAnimation>
+      </li>
+      <li Class="LCAnomalyLibrary.Comp.LC_CompProperties_Studiable">
+        <frequencyTicks>60000</frequencyTicks>
+        <studyTimesPeriod>1</studyTimesPeriod>
+        <knowledgeCategory>Basic</knowledgeCategory>
+        <anomalyKnowledge>3</anomalyKnowledge>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Laetitia Contained -->
+  <ThingDef ParentName="BaseLaetitia">
+    <defName>Laetitia</defName>
+    <label>Laetitia</label>
+    <description>.</description>
+    <uiIconPath>UI/CodexEntries/Laetitia</uiIconPath>
+    <race>
+      <renderTree>Laetitia</renderTree>
+      <thinkTreeMain>MeatLanternContained</thinkTreeMain>
+      <thinkTreeConstant>MeatLanternConstant</thinkTreeConstant>
+    </race>
+    <comps>
+      <li Class="LCAnomalyCore.Comp.CompProperties_PeBoxProduce">
+        <peBoxDef>EnkephalinBox</peBoxDef>
+        <amountStudyGood>16</amountStudyGood>
+        <amountStudyNormal>8</amountStudyNormal> 
+        <amountStudyBad>3</amountStudyBad>
+      </li>
+      <li Class="LCAnomalyLibrary.Comp.CompProperties_Accessoryable">
+        <accessoryDef>Accessory_Laetitia</accessoryDef>
+        <accessoryChance>0.04</accessoryChance>
+        <unlockLevel>2</unlockLevel>
+      </li>
+      <li Class="LCAnomalyLibrary.Comp.CompProperties_EgoExtractable">
+        <weaponExtracted>EgoWeapon_Laetitia</weaponExtracted>
+        <weaponIconPath>UI/Commands/ExtractEGO_Laetitia_Weapon</weaponIconPath>
+        <amountMaxWeapon>2</amountMaxWeapon>
+        <weaponExtractedNeed>40</weaponExtractedNeed>
+        <armorExtracted>Apparel_LaetitiaSuit</armorExtracted>
+        <armorIconPath>UI/Commands/ExtractEGO_Laetitia_Armor</armorIconPath>
+        <amountMaxArmor>1</amountMaxArmor>
+        <armorExtractedNeed>45</armorExtractedNeed>
+        <unlockLevel>3</unlockLevel>
+      </li>
+      <li Class="LCAnomalyLibrary.Comp.LC_CompProperties_StudyUnlocks">
+        <studyNotes>
+          <li>
+            <threshold>3</threshold>
+            <label>Observation Level: I</label>
+            <text></text>
+          </li>
+          <li>
+            <threshold>5</threshold>
+            <label>Observation Level: II</label>
+            <text></text>
+          </li>
+          <li>
+            <threshold>10</threshold>
+            <label>Observation Level: III</label>
+            <text></text>
+          </li>
+          <li>
+            <threshold>12</threshold>
+            <label>Observation Level: IV</label>
+            <text></text>
+          </li>
+        </studyNotes>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

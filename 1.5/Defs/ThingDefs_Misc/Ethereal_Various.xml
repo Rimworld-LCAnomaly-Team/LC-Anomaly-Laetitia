@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>DyingLaetitia</defName>
+    <selectable>false</selectable>
+    <tickerType>Normal</tickerType>
+    <thingClass>Laetitia.Effect.DyingLaetitia</thingClass>
+    <drawOffscreen>true</drawOffscreen>
+  </ThingDef>
+  
+</Defs>
