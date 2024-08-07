@@ -84,6 +84,7 @@
     <Compile Include="Comp\CompLaetitia.cs" />
     <Compile Include="Comp\CompProperties_Laetitia.cs" />
     <Compile Include="Def\PawnKindDefOf.cs" />
+    <Compile Include="Def\SoundDefOf.cs" />
     <Compile Include="Def\ThingDefOf.cs" />
     <Compile Include="Effect\DyingLaetitia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

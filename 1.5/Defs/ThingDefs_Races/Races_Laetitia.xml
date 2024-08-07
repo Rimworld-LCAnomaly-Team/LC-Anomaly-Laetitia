@@ -42,6 +42,7 @@
         <shouldNotifyWhenEscape>false</shouldNotifyWhenEscape>
         <ifProvideWarningPoints>true</ifProvideWarningPoints>
         <customWarningPoints>-1</customWarningPoints>
+        <soundWorking>Laetitia_loop</soundWorking>
       </li>
       <li Class="CompProperties_HoldingPlatformTarget">
         <baseEscapeIntervalMtbDays>45</baseEscapeIntervalMtbDays>
