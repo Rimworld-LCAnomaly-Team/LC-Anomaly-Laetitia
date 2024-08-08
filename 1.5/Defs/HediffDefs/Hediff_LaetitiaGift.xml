@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+  <HediffDef>
+    <defName>LaetitiaGift</defName>
+    <label>Laetitia Gifted</label>
+    <labelNoun>LaetitiaGift</labelNoun>
+    <description>.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <renderNodeProperties>
+      <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_HediffUpHead">
+        <texPaths>
+          <li>UI/Hediff/HeartNormal</li>
+        </texPaths>
+        <parentTagDef>Body</parentTagDef>
+        <overrideMeshSize>1</overrideMeshSize>
+        <drawSize>0.8</drawSize>
+        <colorType>Skin</colorType>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <offsetRangeZ>0~0</offsetRangeZ>
+        <durationTicksRange>600~600</durationTicksRange>
+        <nextSpasmTicksRange>600~600</nextSpasmTicksRange>
+        <drawData>
+          <scaleOffsetByBodySize>false</scaleOffsetByBodySize>
+          <useHediffAnchor>true</useHediffAnchor>
+          <!-- <childScale>0.7</childScale>
+          <bodyTypeScales>
+            <Hulk>1.2</Hulk>
+            <Fat>1.4</Fat>
+            <Thin>0.8</Thin>
+          </bodyTypeScales> -->
+          <defaultData>
+            <layer>49</layer>
+            <offset>(0, 0, 1.2)</offset>
+            <flip>false</flip>
+          </defaultData>
+          <!-- <dataNorth>
+            <offset>(0, 0, 1)</offset>
+            <flip>false</flip>
+          </dataNorth>
+          <dataEast>
+            <offset>(0, 0, 1)</offset>
+            <flip>false</flip>
+          </dataEast>
+          <dataSouth>
+            <offset>(0, 0, 1)</offset>
+            <flip>false</flip>
+          </dataSouth>
+          <dataWest>
+            <offset>(0, 0, 1)</offset>
+            <flip>false</flip>
+          </dataWest> -->
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.0</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+      <li Class="Laetitia.Comp.HediffCompProperties_LaetitiaGift">
+        <deathDistance>3.0</deathDistance>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+    </comps>
+  </HediffDef>
+  
+</Defs>

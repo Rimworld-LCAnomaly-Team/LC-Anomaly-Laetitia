@@ -22,8 +22,7 @@ namespace Laetitia.Comp
 
         public override void Notify_Escaped()
         {
-            //base.Notify_Escaped();
-            //MeatLanternUtility.OnMeatLanternEscape((Pawn)parent, parent.MapHeld);
+            Util.EffectUtil.OnLaetitiaDeath((Pawn)parent, parent.MapHeld);
         }
 
         /// <summary>
@@ -45,7 +44,7 @@ namespace Laetitia.Comp
             //叠加基础成功率，此处是50%，叠加完应是100%
             float finalSuccessRate = successRate_Intellectual + Props.studySucessRateBase;
 
-            //本能和沟通+10%成功率，洞察+20%成功率，压迫-10%成功率
+            //本能，沟通和洞察+10%成功率，压迫-50%成功率
             switch (workType)
             {
                 case EAnomalyWorkType.Instinct:
@@ -53,7 +52,7 @@ namespace Laetitia.Comp
                     break;
 
                 case EAnomalyWorkType.Insight:
-                    finalSuccessRate += 0.2f;
+                    finalSuccessRate += 0.1f;
                     break;
 
                 case EAnomalyWorkType.Attachment:
@@ -61,7 +60,7 @@ namespace Laetitia.Comp
                     break;
 
                 case EAnomalyWorkType.Repression:
-                    finalSuccessRate -= 0.1f;
+                    finalSuccessRate -= 0.5f;
                     break;
             }
 
@@ -81,6 +80,13 @@ namespace Laetitia.Comp
             }
 
             return true;
+        }
+
+        protected override void StudyEvent_Normal(Pawn studier)
+        {
+            var hediff = studier?.health.GetOrAddHediff(Def.HediffDefOf.LaetitiaGift);
+            if(hediff != null)
+                hediff.Severity = 1;
         }
 
         /// <summary>
