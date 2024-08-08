@@ -21,4 +21,39 @@
     </subSounds>
   </SoundDef>
 
+  <SoundDef>
+    <defName>LaetitiaMonster_Call</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>LaetitiaMonster_loop</clipPath>
+          </li>
+        </grains>
+        <volumeRange>30</volumeRange>
+        <pitchRange>0.95~1.05</pitchRange>
+        <sustainLoop>True</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>LaetitiaMonster_Death
+    </defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>LaetitiaMonster_death</clipPath>
+          </li>
+        </grains>
+        <volumeRange>30</volumeRange>
+        <pitchRange>0.95~1.05</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
 </Defs>
