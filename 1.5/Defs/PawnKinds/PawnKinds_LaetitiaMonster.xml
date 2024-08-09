@@ -2,7 +2,9 @@
 <Defs>
 
   <PawnKindDef Name="BaseLaetitiaMonsterKind" Abstract="True">
+    <canMeleeAttack>true</canMeleeAttack>
     <defaultFactionType>Entities</defaultFactionType>
+    <preventIdeo>true</preventIdeo>
     <overrideDebugActionCategory>Entity</overrideDebugActionCategory>
     <meleeAttackInfectionPathways>
       <li>EntityAttacked</li>
@@ -14,7 +16,12 @@
     <defName>LaetitiaMonster</defName>
     <label>LaetitiaMonster</label>
     <race>LaetitiaMonster</race>
-    <combatPower>20</combatPower>
+    <useFixedRotation>true</useFixedRotation>
+    <fixedRotation>South</fixedRotation>
+    <abilities>
+      <li>LaetitiaMonster_Attack</li>
+    </abilities>
+    <combatPower>1</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -22,11 +29,6 @@
           <graphicClass>Graphic_Single</graphicClass>
           <drawSize>4</drawSize>
         </bodyGraphicData>
-        <silhouetteGraphicData>
-          <texPath>UI/CodexEntries/LaetitiaMonster</texPath>
-          <graphicClass>Graphic_Single</graphicClass>
-          <drawSize>3</drawSize>
-        </silhouetteGraphicData>
       </li>
     </lifeStages>
   </PawnKindDef>

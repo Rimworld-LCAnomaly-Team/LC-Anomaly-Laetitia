@@ -10,6 +10,8 @@ namespace Laetitia.Def
 
         public static ThingDef SpawningLaetitiaMonster;
 
+        public static ThingDef DyingLaetitiaMonster;
+
         public static ThingDef LaetitiaEgg;
     }
 }

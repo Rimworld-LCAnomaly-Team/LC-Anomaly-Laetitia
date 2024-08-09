@@ -81,10 +81,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comp\CompAbilityEffect_MonsterAttack.cs" />
     <Compile Include="Comp\CompLaetitia.cs" />
+    <Compile Include="Comp\CompProperties_AbilityMonsterAttack.cs" />
     <Compile Include="Comp\CompProperties_Laetitia.cs" />
     <Compile Include="Comp\HediffCompProperties_LaetitiaGift.cs" />
     <Compile Include="Comp\HediffComp_LaetitiaGift.cs" />
+    <Compile Include="Def\AbilityDefOf.cs" />
     <Compile Include="Def\AnimationDefOf.cs" />
     <Compile Include="Def\HediffDefOf.cs" />
     <Compile Include="Def\PawnKindDefOf.cs" />
@@ -92,7 +95,9 @@
     <Compile Include="Def\SoundDefOf.cs" />
     <Compile Include="Def\ThingDefOf.cs" />
     <Compile Include="Effect\DyingLaetitia.cs" />
+    <Compile Include="Effect\DyingLaetitiaMonster.cs" />
     <Compile Include="Effect\SpawningLaetitiaMonster.cs" />
+    <Compile Include="Job\JobGiver_LaetitiaCastAbility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Things\LC_LaetitiaMonsterPawn.cs" />
     <Compile Include="Things\LC_LaetitiaPawn.cs" />

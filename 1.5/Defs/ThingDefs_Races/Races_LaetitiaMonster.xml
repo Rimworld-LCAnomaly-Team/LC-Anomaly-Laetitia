@@ -3,29 +3,28 @@
   <ThingDef ParentName="LC_EntityBase" Name="BaseLaetitiaMonster" Abstract="True">
     <thingClass>Laetitia.Things.LC_LaetitiaMonsterPawn</thingClass>
     <statBases>
-      <MoveSpeed>0</MoveSpeed>
+      <MoveSpeed>2</MoveSpeed>
       <Flammability>0</Flammability>
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>
       <ComfyTemperatureMax>100</ComfyTemperatureMax>
-      <PsychicSensitivity>0</PsychicSensitivity>
       <MinimumContainmentStrength>0</MinimumContainmentStrength>
       <StaggerDurationFactor>0</StaggerDurationFactor>
       <ToxicResistance>1</ToxicResistance>
     </statBases>
     <race>
       <body>LaetitiaMonster</body>
-      <baseBodySize>1</baseBodySize>
-      <baseHealthScale>1</baseHealthScale>
+      <baseBodySize>3</baseBodySize>
+      <baseHealthScale>100</baseHealthScale>
+      <overrideShouldHaveAbilityTracker>true</overrideShouldHaveAbilityTracker>
       <intelligence>ToolUser</intelligence>
       <needsRest>false</needsRest>
       <hasGenders>false</hasGenders>
       <fleshType>EntityMechanical</fleshType>
       <foodType>None</foodType>
-      <hasCorpse>false</hasCorpse>
+      <hasCorpse>true</hasCorpse>
       <lifeExpectancy>1000</lifeExpectancy>
       <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
-      <soundCallIntervalRange>120~240</soundCallIntervalRange>
-      <disableIgniteVerb>true</disableIgniteVerb>
+      <soundCallIntervalRange>60~120</soundCallIntervalRange>
       <trainability>None</trainability>
       <lifeStageAges>
         <li>
@@ -69,8 +68,8 @@
     <uiIconPath>UI/CodexEntries/LaetitiaMonster</uiIconPath>
     <race>
       <renderTree>LaetitiaMonster</renderTree>
-      <thinkTreeMain>Fleshbeast</thinkTreeMain>
-      <thinkTreeConstant>FleshbeastConstant</thinkTreeConstant>
+      <thinkTreeMain>LaetitiaMonster</thinkTreeMain>
+      <thinkTreeConstant>LaetitiaMonsterConstant</thinkTreeConstant>
     </race>
     <comps>
       <li Class="LCAnomalyCore.Comp.CompProperties_PeBoxProduce">

@@ -7,5 +7,7 @@ namespace Laetitia.Def
     public class SoundDefOf
     {
         public static SoundDef Laetitia_loop;
+
+        public static SoundDef LaetitiaMonster_Spawn;
     }
 }

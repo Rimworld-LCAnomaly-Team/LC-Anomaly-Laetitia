@@ -11,12 +11,30 @@
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Laetitia_loop</clipPath>
+            <clipPath>Pawn/Laetitia/Laetitia_loop</clipPath>
           </li>
         </grains>
-        <volumeRange>15</volumeRange>
+        <volumeRange>30</volumeRange>
         <distRange>30~100</distRange>
         <sustainRelease>5</sustainRelease>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>LaetitiaMonster_Spawn</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <onCamera>true</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Pawn/LaetitiaMonster/LaetitiaMonster_Spawn</clipPath>
+          </li>
+        </grains>
+        <volumeRange>30</volumeRange>
+        <pitchRange>0.95~1.05</pitchRange>
+        <sustainLoop>false</sustainLoop>
       </li>
     </subSounds>
   </SoundDef>
@@ -27,13 +45,13 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Clip">
-            <clipPath>LaetitiaMonster_loop</clipPath>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Pawn/LaetitiaMonster/Call</clipFolderPath>
           </li>
         </grains>
         <volumeRange>30</volumeRange>
         <pitchRange>0.95~1.05</pitchRange>
-        <sustainLoop>True</sustainLoop>
+        <sustainLoop>false</sustainLoop>
       </li>
     </subSounds>
   </SoundDef>
@@ -46,12 +64,12 @@
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>LaetitiaMonster_death</clipPath>
+            <clipPath>Pawn/LaetitiaMonster/LaetitiaMonster_Death</clipPath>
           </li>
         </grains>
         <volumeRange>30</volumeRange>
         <pitchRange>0.95~1.05</pitchRange>
-        <sustainLoop>False</sustainLoop>
+        <sustainLoop>false</sustainLoop>
       </li>
     </subSounds>
   </SoundDef>

@@ -16,5 +16,13 @@
     <thingClass>Laetitia.Effect.SpawningLaetitiaMonster</thingClass>
     <drawOffscreen>true</drawOffscreen>
   </ThingDef>
+
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>DyingLaetitiaMonster</defName>
+    <selectable>false</selectable>
+    <tickerType>Normal</tickerType>
+    <thingClass>Laetitia.Effect.DyingLaetitiaMonster</thingClass>
+    <drawOffscreen>true</drawOffscreen>
+  </ThingDef>
   
 </Defs>

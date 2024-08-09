@@ -6,8 +6,6 @@ namespace Laetitia.Effect
 {
     public class SpawningLaetitiaMonster : LC_FX_Standard
     {
-        protected int completeTick;
-
         public void Init()
         {
             DoDefaultFX();
@@ -30,7 +28,7 @@ namespace Laetitia.Effect
                 return;
             }
 
-            //生成逃脱收容的肉食提灯
+            //生成蕾蒂希娅的朋友
             Pawn monster = PawnGenerator.GeneratePawn(Def.PawnKindDefOf.LaetitiaMonster, Faction.OfEntities);
             GenSpawn.Spawn(monster, base.Position, base.MapHeld);
 

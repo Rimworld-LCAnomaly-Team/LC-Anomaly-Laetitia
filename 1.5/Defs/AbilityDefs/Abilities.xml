@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- LaetitiaMonster_AttackBase -->
+  <AbilityDef Name="LaetitiaMonster_AttackBase" ParentName="AbilityTouchBase" Abstract="True">
+    <iconPath>UI/WeaponSkills/MeatLantern/Whirlwind_OmNomNom</iconPath>
+    <cooldownTicksRange>120</cooldownTicksRange>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <warmupTime>0</warmupTime>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>MeatExplosionSplatter</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- LaetitiaMonster_AttackL -->
+  <AbilityDef ParentName="LaetitiaMonster_AttackBase">
+    <defName>LaetitiaMonster_Attack</defName>
+    <label>Attack</label>
+    <description>.</description>
+    <comps>
+      <li Class="Laetitia.Comp.CompProperties_AbilityMonsterAttack" />
+    </comps>
+  </AbilityDef>
+
+</Defs>
