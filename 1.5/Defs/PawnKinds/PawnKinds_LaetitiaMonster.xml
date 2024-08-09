@@ -18,7 +18,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/LaetitiaMonster/LaetitiaMonster</texPath>
+          <texPath>Things/Pawn/LaetitiaMonster/Attachments/body</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <drawSize>4</drawSize>
         </bodyGraphicData>

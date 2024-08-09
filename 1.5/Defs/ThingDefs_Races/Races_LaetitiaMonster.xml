@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef ParentName="LC_EntityBase" Name="BaseLaetitiaMonster" Abstract="True">
-    <thingClass>LCAnomalyLibrary.Comp.LC_EntityBasePawn</thingClass>
+    <thingClass>Laetitia.Things.LC_LaetitiaMonsterPawn</thingClass>
     <statBases>
-      <MoveSpeed>2</MoveSpeed>
+      <MoveSpeed>0</MoveSpeed>
       <Flammability>0</Flammability>
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>
       <ComfyTemperatureMax>100</ComfyTemperatureMax>

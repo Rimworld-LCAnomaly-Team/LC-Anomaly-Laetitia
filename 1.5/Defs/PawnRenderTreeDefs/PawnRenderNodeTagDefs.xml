@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  
+  <PawnRenderNodeTagDef>
+    <defName>Bone2</defName>
+  </PawnRenderNodeTagDef>
+  
+  <PawnRenderNodeTagDef>
+    <defName>Bone3</defName>
+  </PawnRenderNodeTagDef>
+
+  <PawnRenderNodeTagDef>
+    <defName>r3_1</defName>
+  </PawnRenderNodeTagDef>
+  <PawnRenderNodeTagDef>
+    <defName>r3_2</defName>
+  </PawnRenderNodeTagDef>
+  
+  <PawnRenderNodeTagDef>
+    <defName>r4_1</defName>
+  </PawnRenderNodeTagDef>
+  <PawnRenderNodeTagDef>
+    <defName>r4_2</defName>
+  </PawnRenderNodeTagDef>
+  <PawnRenderNodeTagDef>
+    <defName>r4_3</defName>
+  </PawnRenderNodeTagDef>
+
+  <PawnRenderNodeTagDef>
+    <defName>r5_1</defName>
+  </PawnRenderNodeTagDef>
+  <PawnRenderNodeTagDef>
+    <defName>r5_2</defName>
+  </PawnRenderNodeTagDef>
+
+  <PawnRenderNodeTagDef>
+    <defName>r1_1</defName>
+  </PawnRenderNodeTagDef>
+  <PawnRenderNodeTagDef>
+    <defName>r1_2</defName>
+  </PawnRenderNodeTagDef>
+
+  <PawnRenderNodeTagDef>
+    <defName>r2_1</defName>
+  </PawnRenderNodeTagDef>
+  <PawnRenderNodeTagDef>
+    <defName>r2_2</defName>
+  </PawnRenderNodeTagDef>
+  
+</Defs>

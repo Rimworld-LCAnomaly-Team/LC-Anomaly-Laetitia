@@ -1,6 +1,190 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <!-- Groups -->
+
+  <!-- Bone2 -->
+  <BodyPartGroupDef>
+    <defName>Bone2</defName>
+    <label>Bone2</label>
+    <labelShort>Bone2</labelShort>
+    <listOrder>77</listOrder>
+  </BodyPartGroupDef>
+  <!-- Bone3 -->
+  <BodyPartGroupDef>
+    <defName>Bone3</defName>
+    <label>Bone3</label>
+    <labelShort>Bone3</labelShort>
+    <listOrder>77</listOrder>
+  </BodyPartGroupDef>
+
+  <!-- r3_1 -->
+  <BodyPartGroupDef>
+    <defName>r3_1</defName>
+    <label>r3_1</label>
+    <labelShort>r3_1</labelShort>
+    <listOrder>77</listOrder>
+  </BodyPartGroupDef>
+  <!-- r3_2 -->
+  <BodyPartGroupDef>
+    <defName>r3_2</defName>
+    <label>r3_2</label>
+    <labelShort>r3_2</labelShort>
+    <listOrder>77</listOrder>
+  </BodyPartGroupDef>
+
+  <!-- r4_1 -->
+  <BodyPartGroupDef>
+    <defName>r4_1</defName>
+    <label>r4_1</label>
+    <labelShort>r4_1</labelShort>
+    <listOrder>77</listOrder>
+  </BodyPartGroupDef>
+  <!-- r4_2 -->
+  <BodyPartGroupDef>
+    <defName>r4_2</defName>
+    <label>r4_2</label>
+    <labelShort>r4_2</labelShort>
+    <listOrder>77</listOrder>
+  </BodyPartGroupDef>
+  <!-- r4_3 -->
+  <BodyPartGroupDef>
+    <defName>r4_3</defName>
+    <label>r4_3</label>
+    <labelShort>r4_3</labelShort>
+    <listOrder>77</listOrder>
+  </BodyPartGroupDef>
+
+  <!-- r5_1 -->
+  <BodyPartGroupDef>
+    <defName>r5_1</defName>
+    <label>r5_1</label>
+    <labelShort>r5_1</labelShort>
+    <listOrder>77</listOrder>
+  </BodyPartGroupDef>
+  <!-- r5_2 -->
+  <BodyPartGroupDef>
+    <defName>r5_2</defName>
+    <label>r5_2</label>
+    <labelShort>r5_2</labelShort>
+    <listOrder>77</listOrder>
+  </BodyPartGroupDef>
+
+  <!-- r1_1 -->
+  <BodyPartGroupDef>
+    <defName>r1_1</defName>
+    <label>r1_1</label>
+    <labelShort>r1_1</labelShort>
+    <listOrder>77</listOrder>
+  </BodyPartGroupDef>
+  <!-- r1_2 -->
+  <BodyPartGroupDef>
+    <defName>r1_2</defName>
+    <label>r1_2</label>
+    <labelShort>r1_2</labelShort>
+    <listOrder>77</listOrder>
+  </BodyPartGroupDef>
+
+  <!-- r2_1 -->
+  <BodyPartGroupDef>
+    <defName>r2_1</defName>
+    <label>r2_1</label>
+    <labelShort>r2_1</labelShort>
+    <listOrder>77</listOrder>
+  </BodyPartGroupDef>
+  <!-- r2_2 -->
+  <BodyPartGroupDef>
+    <defName>r2_2</defName>
+    <label>r2_2</label>
+    <labelShort>r2_2</labelShort>
+    <listOrder>77</listOrder>
+  </BodyPartGroupDef>  
+
+  <!-- Parts -->
+
+  <!-- Bone2 -->
+  <BodyPartDef>
+    <defName>Bone2</defName>
+    <label>Bone2</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+  <!-- Bone3 -->
+  <BodyPartDef>
+    <defName>Bone3</defName>
+    <label>Bone3</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+  <!-- r3_1 -->
+  <BodyPartDef>
+    <defName>r3_1</defName>
+    <label>r3_1</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+  <!-- r3_2 -->
+  <BodyPartDef>
+    <defName>r3_2</defName>
+    <label>r3_2</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+
+  <!-- r4_1 -->
+  <BodyPartDef>
+    <defName>r4_1</defName>
+    <label>r4_1</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+  <!-- r4_2 -->
+  <BodyPartDef>
+    <defName>r4_2</defName>
+    <label>r4_2</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+  <!-- r4_3 -->
+  <BodyPartDef>
+    <defName>r4_3</defName>
+    <label>r4_3</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+
+  <!-- r5_1 -->
+  <BodyPartDef>
+    <defName>r5_1</defName>
+    <label>r5_1</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+  <!-- r5_2 -->
+  <BodyPartDef>
+    <defName>r5_2</defName>
+    <label>r5_2</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+
+  <!-- r1_1 -->
+  <BodyPartDef>
+    <defName>r1_1</defName>
+    <label>r1_1</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+  <!-- r1_2 -->
+  <BodyPartDef>
+    <defName>r1_2</defName>
+    <label>r1_2</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+
+  <!-- r2_1 -->
+  <BodyPartDef>
+    <defName>r2_1</defName>
+    <label>r2_1</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+  <!-- r2_2 -->
+  <BodyPartDef>
+    <defName>r2_2</defName>
+    <label>r2_2</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+
   <!-- Bodies -->
   <BodyDef>
     <defName>LaetitiaMonster</defName>
@@ -13,6 +197,98 @@
         <li>Torso</li>
       </groups>
       <parts>
+        <li>
+          <def>Bone2</def>
+          <customLabel>Bone2</customLabel>
+          <coverage>0.77</coverage>
+          <groups>
+            <li>Bone2</li>
+          </groups>
+        </li>
+        <li>
+          <def>Bone3</def>
+          <customLabel>Bone3</customLabel>
+          <coverage>0.77</coverage>
+          <groups>
+            <li>Bone3</li>
+          </groups>
+        </li>
+        <li>
+          <def>r3_1</def>
+          <customLabel>r3_1</customLabel>
+          <coverage>0.77</coverage>
+          <groups>
+            <li>r3_1</li>
+          </groups>
+        </li>
+        <li>
+          <def>r3_2</def>
+          <customLabel>r3_2</customLabel>
+          <coverage>0.77</coverage>
+          <groups>
+            <li>r3_2</li>
+          </groups>
+        </li>
+
+        <li>
+          <def>r4_1</def>
+          <customLabel>r4_1</customLabel>
+          <coverage>0.77</coverage>
+          <groups>
+            <li>r4_1</li>
+          </groups>
+        </li>
+        <li>
+          <def>r4_2</def>
+          <customLabel>r4_2</customLabel>
+          <coverage>0.77</coverage>
+          <groups>
+            <li>r4_2</li>
+          </groups>
+        </li>
+        <li>
+          <def>r4_3</def>
+          <customLabel>r4_3</customLabel>
+          <coverage>0.77</coverage>
+          <groups>
+            <li>r4_3</li>
+          </groups>
+        </li>
+
+        <li>
+          <def>r5_1</def>
+          <customLabel>r5_1</customLabel>
+          <coverage>0.77</coverage>
+          <groups>
+            <li>r5_1</li>
+          </groups>
+        </li>
+        <li>
+          <def>r5_2</def>
+          <customLabel>r5_2</customLabel>
+          <coverage>0.77</coverage>
+          <groups>
+            <li>r5_2</li>
+          </groups>
+        </li>
+
+        <li>
+          <def>r2_1</def>
+          <customLabel>r2_1</customLabel>
+          <coverage>0.77</coverage>
+          <groups>
+            <li>r2_1</li>
+          </groups>
+        </li>
+        <li>
+          <def>r2_2</def>
+          <customLabel>r2_2</customLabel>
+          <coverage>0.77</coverage>
+          <groups>
+            <li>r2_2</li>
+          </groups>
+        </li>
+
         <li>
           <def>Spine</def>
           <coverage>0.025</coverage>
