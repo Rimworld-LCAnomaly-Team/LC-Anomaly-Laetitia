@@ -7,7 +7,7 @@
 		<li>1.5</li>
 	</supportedVersions>
 	<description>The Laetitia Anomaly from LobotomyCorporation.</description>
-	<url>https://github.com/DarthCY-K/LC-Anomaly-Laetitia</url>
+	<url>https://github.com/Rimworld-LCAnomaly-Team/LC-Anomaly-Laetitia</url>
 	<modDependencies>
 		<li>
 			<packageId>DarthCY.LC.AnomalyLibrary</packageId>
