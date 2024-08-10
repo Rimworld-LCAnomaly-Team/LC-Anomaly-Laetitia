@@ -64,12 +64,12 @@
   <ThingDef ParentName="BaseLaetitia">
     <defName>Laetitia</defName>
     <label>Laetitia</label>
-    <description>.</description>
+    <description>Laetitia (O-01-67), also known as A Wee Witch, is a humanoid Abnormality with the appearance of a small girl with pale skin, gray round hair, red tips and red eyes. She wears a pair of golden jingle bells behind the side of her head, a red bonnet, a red ribbon around her neck, a red and white dress with a pair of red shoes, and dark stockings.\nShe moves in a mechanical way, acting like a robot instead of a human. When working with her, the sound of a music box can be heard in the containment room.</description>
     <uiIconPath>UI/CodexEntries/Laetitia</uiIconPath>
     <race>
       <renderTree>Laetitia</renderTree>
-      <thinkTreeMain>MeatLanternContained</thinkTreeMain>
-      <thinkTreeConstant>MeatLanternConstant</thinkTreeConstant>
+      <thinkTreeMain>Laetitia</thinkTreeMain>
+      <thinkTreeConstant>LaetitiaConstant</thinkTreeConstant>
     </race>
     <comps>
       <li Class="LCAnomalyCore.Comp.CompProperties_PeBoxProduce">
@@ -99,22 +99,22 @@
           <li>
             <threshold>3</threshold>
             <label>Observation Level: I</label>
-            <text></text>
+            <text>When the work result was Normal, Laetitia gave a heartfelt gift to the empolyee.</text>
           </li>
           <li>
             <threshold>5</threshold>
             <label>Observation Level: II</label>
-            <text></text>
+            <text>When the empolyee was assigned to work with a different Abnormality instead of Laetitia, a ███████ eventually burst out of their body at a certain point.\nUnlocks the E.G.O. Gift 'Laetitia'.</text>
           </li>
           <li>
             <threshold>10</threshold>
             <label>Observation Level: III</label>
-            <text></text>
+            <text>When the assignment was canceled before the ███████ was born, nothing strange occurred to the employee’s body.\nUnlocks the E.G.O. Weapon and Suit 'Lantern'.</text>
           </li>
           <li>
             <threshold>12</threshold>
             <label>Observation Level: IV</label>
-            <text></text>
+            <text>WIP</text>
           </li>
         </studyNotes>
       </li>

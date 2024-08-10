@@ -40,7 +40,7 @@
   <!-- LaetitiaMonster -->
   <ThingDef ParentName="BaseLaetitiaMonster">
     <defName>LaetitiaMonster</defName>
-    <label>LaetitiaMonster</label>
+    <label>Little Witch's Friend</label>
     <description>.</description>
     <uiIconPath>UI/CodexEntries/LaetitiaMonster</uiIconPath>
     <race>

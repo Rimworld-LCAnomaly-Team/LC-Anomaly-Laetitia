@@ -4,7 +4,7 @@
   <LCAnomalyLibrary.Defs.ThingDef_AnomalyEgg ParentName="ResourceBase">
     <defName>LaetitiaEgg</defName>
     <label>Laetitia Egg</label>
-    <description>.</description>
+    <description>The original form of Abnormality after the death, presents a special egg shape</description>
     <anomalyLevelTag>HE</anomalyLevelTag>
     <thingClass>ThingWithComps</thingClass>
     <graphicData>

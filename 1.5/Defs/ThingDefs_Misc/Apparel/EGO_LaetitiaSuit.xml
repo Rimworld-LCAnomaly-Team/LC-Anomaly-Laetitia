@@ -4,7 +4,7 @@
   <ThingDef Name="Apparel_LaetitiaSuit" ParentName="LC_Apparel_EGO">
     <defName>Apparel_LaetitiaSuit</defName>
     <label>E.G.O.Suit (Laetitia)</label>
-    <description>.</description>
+    <description>The ribbon on the coat represents a child's yearning for jolliness.\nThe little kid who couldn't leave her friends behind came up with a brilliant idea</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/LaetitiaSuit/LaetitiaSuit</texPath>
     </graphicData>

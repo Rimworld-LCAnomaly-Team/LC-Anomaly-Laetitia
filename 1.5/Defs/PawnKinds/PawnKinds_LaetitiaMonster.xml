@@ -14,7 +14,7 @@
 
   <PawnKindDef ParentName="BaseLaetitiaMonsterKind">
     <defName>LaetitiaMonster</defName>
-    <label>LaetitiaMonster</label>
+    <label>Little Witch's Friend</label>
     <race>LaetitiaMonster</race>
     <useFixedRotation>true</useFixedRotation>
     <fixedRotation>South</fixedRotation>

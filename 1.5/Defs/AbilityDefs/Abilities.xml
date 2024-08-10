@@ -27,8 +27,8 @@
   <!-- LaetitiaMonster_Attack -->
   <AbilityDef ParentName="LaetitiaMonster_AttackBase">
     <defName>LaetitiaMonster_Attack</defName>
-    <label>Attack</label>
-    <description>.</description>
+    <label>Penetrate Attack</label>
+    <description>You should not see this.</description>
     <comps>
       <li Class="Laetitia.Comp.CompProperties_AbilityMonsterAttack" >
         <damageRange>10.0~15.0</damageRange>

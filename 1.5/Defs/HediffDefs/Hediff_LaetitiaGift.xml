@@ -4,9 +4,9 @@
 
   <HediffDef>
     <defName>LaetitiaGift</defName>
-    <label>Laetitia Gifted</label>
-    <labelNoun>LaetitiaGift</labelNoun>
-    <description>.</description>
+    <label>Laetitia's Gift</label>
+    <labelNoun>This one was given a gift from Laetizia during work, and this hediff will last for one day.</labelNoun>
+    <description>When the work result is normal, Laetitia will give the employee a gift, and then a red heart will appear on the employee's head.\nIf an employee holds a gift from Laetitia and is assigned to work on other abnormality (including tools), and the assigned work is not cancelled when the employee reaches the designated distance from the holding platform, the employee will be killed by the exploded gift and a spider (the little girl's friend) will be generated at the death position.</description>
     <hediffClass>Hediff_High</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
@@ -30,33 +30,11 @@
         <drawData>
           <scaleOffsetByBodySize>false</scaleOffsetByBodySize>
           <useHediffAnchor>true</useHediffAnchor>
-          <!-- <childScale>0.7</childScale>
-          <bodyTypeScales>
-            <Hulk>1.2</Hulk>
-            <Fat>1.4</Fat>
-            <Thin>0.8</Thin>
-          </bodyTypeScales> -->
           <defaultData>
             <layer>49</layer>
             <offset>(0, 0, 1.2)</offset>
             <flip>false</flip>
           </defaultData>
-          <!-- <dataNorth>
-            <offset>(0, 0, 1)</offset>
-            <flip>false</flip>
-          </dataNorth>
-          <dataEast>
-            <offset>(0, 0, 1)</offset>
-            <flip>false</flip>
-          </dataEast>
-          <dataSouth>
-            <offset>(0, 0, 1)</offset>
-            <flip>false</flip>
-          </dataSouth>
-          <dataWest>
-            <offset>(0, 0, 1)</offset>
-            <flip>false</flip>
-          </dataWest> -->
         </drawData>
       </li>
     </renderNodeProperties>
@@ -74,9 +52,9 @@
   
   <HediffDef>
     <defName>LaetitiaGiftAggresive</defName>
-    <label>Laetitia Gifted Aggresive</label>
-    <labelNoun>LaetitiaGiftAggresive</labelNoun>
-    <description>.</description>
+    <label>Laetitia's Gift (Aggresive)</label>
+    <labelNoun>This one has been gifted aggressively by E.G.O.Laetitia, and this hediff will soon end.</labelNoun>
+    <description>Unlike gifts obtained at work, this hediff will soon come to an end.\nAt the end, this one will be killed and several little girls' friends will be generated at the place of death.</description>
     <hediffClass>Hediff_High</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>

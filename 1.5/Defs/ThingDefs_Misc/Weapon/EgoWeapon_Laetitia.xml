@@ -4,7 +4,7 @@
   <ThingDef ParentName="LC_BaseRangedWeapon_EGO">
     <defName>EgoWeapon_Laetitia</defName>
     <label>E.G.O. Weapon (Laetitia) </label>
-    <description>.</description>
+    <description>It takes a lot of time to extract, but its power cannot be ignored.\nThe crude design appears to have been made a long time ago.\nThe small accessory remains like the wishes of a child who yearned for happiness.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/EgoWeapon_Laetitia</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -74,8 +74,8 @@
   <!-- SendTheGift -->
   <AbilityDef>
     <defName>LaetitiaEGO_SendTheGift</defName>
-    <label>SendTheGift</label>
-    <description>.</description>
+    <label>Send The Gift</label>
+    <description>Mark the selected target then add a gift hediff of Laetitia to it.\nUnlike the hediff obtained through work, the applied hediff is highly aggressive.\nWhen the hediff ends or the target downed, several 'Little Witch's Friend' will appear.</description>
     <iconPath>UI/Abilities/SendTheGift</iconPath>
     <cooldownTicksRange>3600</cooldownTicksRange>
     <hostile>true</hostile>
