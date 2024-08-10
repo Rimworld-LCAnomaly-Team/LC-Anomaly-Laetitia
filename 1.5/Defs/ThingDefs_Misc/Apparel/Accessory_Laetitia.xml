@@ -26,9 +26,8 @@
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Accessory/LaetitiaAccessory</wornGraphicPath>
     </apparel>
     <equippedStatOffsets>
-      <MeleeDamageFactor>0.10</MeleeDamageFactor>
-      <MeleeHitChance>0.10</MeleeHitChance>
-      <IncomingDamageFactor>-0.05</IncomingDamageFactor>
+      <MentalBreakThreshold>-0.10</MentalBreakThreshold>
+      <SocialImpact>0.05</SocialImpact>
       <EntityStudyRate>0.10</EntityStudyRate>
     </equippedStatOffsets>
     <tradeTags>

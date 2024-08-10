@@ -17,20 +17,4 @@
     <orderInCategory>800</orderInCategory>
   </LCAnomalyLibrary.Defs.EntityCodexEntryDef>
 
-  <LCAnomalyLibrary.Defs.EntityCodexEntryDef>
-  	<defName>LaetitiaMonster</defName>
-    <label>LaetitiaMonster</label>
-    <description>.</description>
-    <uiIconPath>UI/CodexEntries/LaetitiaMonster</uiIconPath>
-    <category>HE</category>
-    <discoveryType>BecameVisible</discoveryType>
-    <linkedThings>
-      <li>LaetitiaMonster</li>
-    </linkedThings>
-    <!-- <discoveredResearchProjects>
-      <li>ExtractLaetitia</li>
-    </discoveredResearchProjects> -->
-    <orderInCategory>801</orderInCategory>
-  </LCAnomalyLibrary.Defs.EntityCodexEntryDef>
-
 </Defs>

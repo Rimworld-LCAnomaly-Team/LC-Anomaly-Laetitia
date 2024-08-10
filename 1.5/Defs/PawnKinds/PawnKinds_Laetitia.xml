@@ -2,6 +2,7 @@
 <Defs>
 
   <PawnKindDef Name="BaseLaetitiaKind" Abstract="True">
+    <canMeleeAttack>false</canMeleeAttack>
     <defaultFactionType>Entities</defaultFactionType>
     <overrideDebugActionCategory>Entity</overrideDebugActionCategory>
     <meleeAttackInfectionPathways>

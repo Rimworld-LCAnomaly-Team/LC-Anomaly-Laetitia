@@ -20,7 +20,7 @@ namespace Laetitia.Job
                 return null;
             }
 
-            Log.Message("cast");
+            //Log.Message("cast");
 
             Verse.AI.Job job = JobMaker.MakeJob(JobDefOf.CastAbilityOnThing);
             job.ability = ability;

@@ -8,7 +8,6 @@ namespace Laetitia.Comp
     {
         public HediffCompProperties_LaetitiaGift Props => (HediffCompProperties_LaetitiaGift)props;
 
-
         public override void CompPostTick(ref float severityAdjustment)
         {
             base.CompPostTick(ref severityAdjustment);
@@ -35,11 +34,6 @@ namespace Laetitia.Comp
                     }
                 }
             }
-        }
-
-        public override void Notify_Spawned()
-        {
-            base.Notify_Spawned();
         }
 
         private void TurnIntoMonster()

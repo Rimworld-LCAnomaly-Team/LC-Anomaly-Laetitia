@@ -3,7 +3,6 @@
 
   <!-- LaetitiaMonster_AttackBase -->
   <AbilityDef Name="LaetitiaMonster_AttackBase" ParentName="AbilityTouchBase" Abstract="True">
-    <iconPath>UI/WeaponSkills/MeatLantern/Whirlwind_OmNomNom</iconPath>
     <cooldownTicksRange>120</cooldownTicksRange>
     <ai_IsOffensive>true</ai_IsOffensive>
     <aiCanUse>true</aiCanUse>
@@ -25,13 +24,17 @@
     </comps>
   </AbilityDef>
 
-  <!-- LaetitiaMonster_AttackL -->
+  <!-- LaetitiaMonster_Attack -->
   <AbilityDef ParentName="LaetitiaMonster_AttackBase">
     <defName>LaetitiaMonster_Attack</defName>
     <label>Attack</label>
     <description>.</description>
     <comps>
-      <li Class="Laetitia.Comp.CompProperties_AbilityMonsterAttack" />
+      <li Class="Laetitia.Comp.CompProperties_AbilityMonsterAttack" >
+        <damageRange>10.0~15.0</damageRange>
+        <armorPenetrationRange>0.10~0.15</armorPenetrationRange>
+        <stunTimeRange>1.0~1.5</stunTimeRange>
+      </li>
     </comps>
   </AbilityDef>
 

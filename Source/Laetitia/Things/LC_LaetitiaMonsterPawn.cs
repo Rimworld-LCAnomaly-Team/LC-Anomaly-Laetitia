@@ -1,7 +1,7 @@
-﻿using Laetitia.Effect;
+﻿using Laetitia.Comp;
+using Laetitia.Effect;
 using LCAnomalyLibrary.Comp;
 using RimWorld;
-using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
@@ -25,6 +25,21 @@ namespace Laetitia.Things
 
         public Pawn CurTarget;
 
+        protected CompAbilityEffect_MonsterAttack CompAbilityAttack
+        {
+            get
+            {
+                if(compAbilityAttack == null)
+                {
+                    return compAbilityAttack = 
+                        this.abilities.GetAbility(Def.AbilityDefOf.LaetitiaMonster_Attack)
+                        .CompOfType<CompAbilityEffect_MonsterAttack>();
+                }
+                return compAbilityAttack;
+            }
+        }
+        private CompAbilityEffect_MonsterAttack compAbilityAttack;
+
 
         public LC_LaetitiaMonsterPawn() 
         {
@@ -33,7 +48,7 @@ namespace Laetitia.Things
 
         public override void Tick()
         {
-            Log.Warning(isAttacking.ToString());
+            //Log.Warning(isAttacking.ToString());
 
             if(isSpawning)
             {
@@ -48,6 +63,7 @@ namespace Laetitia.Things
                 if (this.Drawer.renderer.CurAnimation == Def.AnimationDefOf.LaetitiaMonster_Dead
                     && this.Drawer.renderer.renderTree.AnimationTick == 44)
                 {
+                    isDying = false;
                     shouldDie = true;
                     ((DyingLaetitiaMonster)GenSpawn.Spawn(Def.ThingDefOf.DyingLaetitiaMonster, this.PositionHeld, this.MapHeld)).InitWith(this);
                     Kill(null);
@@ -64,7 +80,7 @@ namespace Laetitia.Things
                         var time = this.Drawer.renderer.renderTree.AnimationTick;
                         if (time == 26)
                         {
-                            Log.Warning("触发了攻击关键帧（左侧）");
+                            //Log.Warning("触发了攻击关键帧（左侧）");
                             AttackDirect(CurTarget);
                         }
                         else if (time == 39)
@@ -77,7 +93,7 @@ namespace Laetitia.Things
                         var time = this.Drawer.renderer.renderTree.AnimationTick;
                         if (time == 23)
                         {
-                            Log.Warning("触发了攻击关键帧（右侧）");
+                            //Log.Warning("触发了攻击关键帧（右侧）");
                             AttackDirect(CurTarget);
                         }
                         else if (time == 39)
@@ -102,13 +118,14 @@ namespace Laetitia.Things
                 }
             }
 
-
-
             //Log.Warning((this.Drawer.renderer.renderTree.AnimationTick).ToString());
         }
 
         public override void Kill(DamageInfo? dinfo, Hediff exactCulprit = null)
         {
+            if (isDying)
+                return;
+
             if(!shouldDie)
             {
                 isDying = true;
@@ -131,74 +148,6 @@ namespace Laetitia.Things
             //LordMaker.MakeNewLord(Faction.OfEntities, new LordJob_LaetitiaMonsterAssault(), this.MapHeld, new List<Pawn> { this });
         }
 
-        public override IEnumerable<Gizmo> GetGizmos()
-        {
-            foreach(var gizmo in base.GetGizmos())
-            {
-                yield return gizmo;
-            }
-
-            yield return new Command_Action
-            {
-                defaultLabel = "walk",
-                action = delegate
-                {
-                    Log.Warning($"Dev：walk");
-                    this.Drawer.renderer.SetAnimation(Def.AnimationDefOf.LaetitiaMonster_Walk);
-                }
-            };
-
-            yield return new Command_Action
-            {
-                defaultLabel = "Idle",
-                action = delegate
-                {
-                    Log.Warning($"Dev：Idle");
-                    this.Drawer.renderer.SetAnimation(Def.AnimationDefOf.LaetitiaMonster_Idle);
-                }
-            };
-
-            yield return new Command_Action
-            {
-                defaultLabel = "AttackR",
-                action = delegate
-                {
-                    Log.Warning($"Dev：AttackR");
-                    this.Drawer.renderer.SetAnimation(Def.AnimationDefOf.LaetitiaMonster_AttackR);
-                }
-            };
-
-            yield return new Command_Action
-            {
-                defaultLabel = "AttackL",
-                action = delegate
-                {
-                    Log.Warning($"Dev：AttackL");
-                    this.Drawer.renderer.SetAnimation(Def.AnimationDefOf.LaetitiaMonster_AttackL);
-                }
-            };
-
-            yield return new Command_Action
-            {
-                defaultLabel = "Spawn",
-                action = delegate
-                {
-                    Log.Warning($"Dev：Spawn");
-                    this.Drawer.renderer.SetAnimation(Def.AnimationDefOf.LaetitiaMonster_Spawn);
-                }
-            };
-
-            yield return new Command_Action
-            {
-                defaultLabel = "Dead",
-                action = delegate
-                {
-                    Log.Warning($"Dev：Dead");
-                    this.Drawer.renderer.SetAnimation(Def.AnimationDefOf.LaetitiaMonster_Dead);
-                }
-            };
-        }
-
         public void SetTargetAndDir(Pawn target)
         {
             isAttacking = true;
@@ -207,7 +156,7 @@ namespace Laetitia.Things
             var pos = target.Position - this.Position;
             if (pos.x >= 0)
             {
-                Log.Warning("触发了右侧攻击技能");
+                //Log.Warning("触发了右侧攻击技能");
 
                 attackDir = ELaetitiaMonsterAttackDir.Right;
                 this.Drawer.renderer.SetAnimation(Def.AnimationDefOf.LaetitiaMonster_AttackR);
@@ -215,7 +164,7 @@ namespace Laetitia.Things
 
             else
             {
-                Log.Warning("触发了左侧攻击技能");
+                //Log.Warning("触发了左侧攻击技能");
 
                 attackDir = ELaetitiaMonsterAttackDir.Left;
                 this.Drawer.renderer.SetAnimation(Def.AnimationDefOf.LaetitiaMonster_AttackL);
@@ -224,13 +173,11 @@ namespace Laetitia.Things
 
         private void AttackDirect(Pawn target)
         {
-            DamageInfo dinfo1 = new DamageInfo(DamageDefOf.Cut, 10, 0.25f, -1f, this);
-            DamageInfo dinfo2 = new DamageInfo(DamageDefOf.Stun, 2, 0, -1f, this);
             if (!target.Dead)
             {
                 EffecterDefOf.MeatExplosionSmall.SpawnMaintained(target.PositionHeld, target.MapHeld);
-                target.TakeDamage(dinfo2);
-                target.TakeDamage(dinfo1);
+                target.TakeDamage(CompAbilityAttack.StunDInfo);
+                target.TakeDamage(CompAbilityAttack.AttackDInfo);
             }
         }
     }

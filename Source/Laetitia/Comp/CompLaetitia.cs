@@ -22,7 +22,7 @@ namespace Laetitia.Comp
 
         public override void Notify_Escaped()
         {
-            Util.EffectUtil.OnLaetitiaDeath((Pawn)parent, parent.MapHeld);
+            parent.Kill();
         }
 
         /// <summary>

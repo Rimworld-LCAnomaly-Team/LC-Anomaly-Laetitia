@@ -8,6 +8,17 @@ namespace Laetitia.Comp
     {
         public new CompProperties_AbilityMonsterAttack Props => (CompProperties_AbilityMonsterAttack)props;
 
+        public DamageInfo AttackDInfo;
+        public DamageInfo StunDInfo;
+
+        public override void Initialize(AbilityCompProperties props)
+        {
+            base.Initialize(props);
+
+            AttackDInfo = new DamageInfo(DamageDefOf.Cut, Props.damageRange.RandomInRange, Props.armorPenetrationRange.RandomInRange, -1f, parent.pawn);
+            StunDInfo = new DamageInfo(DamageDefOf.Stun, Props.stunTimeRange.RandomInRange, 0, -1f, parent.pawn);
+        }
+
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             base.Apply(target, dest);

@@ -72,4 +72,52 @@
     </comps>
   </HediffDef>
   
+  <HediffDef>
+    <defName>LaetitiaGiftAggresive</defName>
+    <label>Laetitia Gifted Aggresive</label>
+    <labelNoun>LaetitiaGiftAggresive</labelNoun>
+    <description>.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <renderNodeProperties>
+      <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_HediffUpHead">
+        <texPaths>
+          <li>UI/Hediff/HeartBroken</li>
+        </texPaths>
+        <parentTagDef>Body</parentTagDef>
+        <overrideMeshSize>1</overrideMeshSize>
+        <drawSize>0.8</drawSize>
+        <colorType>Skin</colorType>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <offsetRangeZ>0~0</offsetRangeZ>
+        <durationTicksRange>600~600</durationTicksRange>
+        <nextSpasmTicksRange>600~600</nextSpasmTicksRange>
+        <drawData>
+          <scaleOffsetByBodySize>false</scaleOffsetByBodySize>
+          <useHediffAnchor>true</useHediffAnchor>
+          <defaultData>
+            <layer>49</layer>
+            <offset>(0, 0, 1.2)</offset>
+            <flip>false</flip>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-48.0</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+      <li Class="Laetitia.Comp.HediffCompProperties_LaetitiaGiftAggresive">
+        <spawnAmount>1~2</spawnAmount>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+    </comps>
+  </HediffDef>
+
 </Defs>

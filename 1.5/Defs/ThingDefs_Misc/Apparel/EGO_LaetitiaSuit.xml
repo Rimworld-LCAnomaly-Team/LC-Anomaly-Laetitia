@@ -18,9 +18,12 @@
       <EquipDelay>10</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.10</MoveSpeed>
-      <MeleeHitChance>+0.20</MeleeHitChance>
-      <ShootingAccuracyPawn>-1.00</ShootingAccuracyPawn>
+      <MeleeHitChance>-1.00</MeleeHitChance>
+      <MeleeDodgeChance>-3.00</MeleeDodgeChance>
+      <ShootingAccuracyPawn>2.00</ShootingAccuracyPawn>
+      <RangedCooldownFactor>-0.10</RangedCooldownFactor>
+      <MoveSpeed>0.10</MoveSpeed>
+      <SocialImpact>0.10</SocialImpact>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>

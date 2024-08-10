@@ -14,7 +14,7 @@
     <race>
       <body>LaetitiaMonster</body>
       <baseBodySize>3</baseBodySize>
-      <baseHealthScale>100</baseHealthScale>
+      <baseHealthScale>2</baseHealthScale>
       <overrideShouldHaveAbilityTracker>true</overrideShouldHaveAbilityTracker>
       <intelligence>ToolUser</intelligence>
       <needsRest>false</needsRest>
@@ -34,30 +34,7 @@
           <soundCall>LaetitiaMonster_Call</soundCall>
         </li>
       </lifeStageAges>
-      <hediffGiverSets><li>AnomalyEntity</li></hediffGiverSets>
     </race>
-    <comps>
-      <li Class="LCAnomalyLibrary.Comp.LC_CompProperties_Entity">
-        <qliphothCountMax>3</qliphothCountMax>
-        <studySucessRateBase>0.5</studySucessRateBase>
-        <shouldNotifyWhenEscape>true</shouldNotifyWhenEscape>
-        <ifProvideWarningPoints>true</ifProvideWarningPoints>
-        <customWarningPoints>-1</customWarningPoints>
-      </li>
-      <li Class="CompProperties_HoldingPlatformTarget">
-        <baseEscapeIntervalMtbDays>45</baseEscapeIntervalMtbDays>
-        <lookForTargetOnEscape>false</lookForTargetOnEscape>
-        <hasAnimation>false</hasAnimation>
-      </li>
-      <li Class="LCAnomalyLibrary.Comp.LC_CompProperties_Studiable">
-        <frequencyTicks>60000</frequencyTicks>
-        <studyTimesPeriod>1</studyTimesPeriod>
-        <knowledgeCategory>Basic</knowledgeCategory>
-        <anomalyKnowledge>3</anomalyKnowledge>
-        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
-        <requiresHoldingPlatform>true</requiresHoldingPlatform>
-      </li>
-    </comps>
   </ThingDef>
 
   <!-- LaetitiaMonster -->
@@ -71,45 +48,13 @@
       <thinkTreeMain>LaetitiaMonster</thinkTreeMain>
       <thinkTreeConstant>LaetitiaMonsterConstant</thinkTreeConstant>
     </race>
-    <comps>
-      <li Class="LCAnomalyCore.Comp.CompProperties_PeBoxProduce">
-        <peBoxDef>EnkephalinBox</peBoxDef>
-        <amountStudyGood>12</amountStudyGood>
-        <amountStudyNormal>6</amountStudyNormal> 
-        <amountStudyBad>3</amountStudyBad>
-      </li>
-      <li Class="LCAnomalyLibrary.Comp.LC_CompProperties_StudyUnlocks">
-        <studyNotes>
-          <li>
-            <threshold>3</threshold>
-            <label>Observation Level: I</label>
-            <text></text>
-          </li>
-          <li>
-            <threshold>5</threshold>
-            <label>Observation Level: II</label>
-            <text></text>
-          </li>
-          <li>
-            <threshold>10</threshold>
-            <label>Observation Level: III</label>
-            <text></text>
-          </li>
-          <li>
-            <threshold>12</threshold>
-            <label>Observation Level: IV</label>
-            <text></text>
-          </li>
-        </studyNotes>
-      </li>
-    </comps>
     <tools>
       <li>
         <label>Head</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>7</power>
+        <power>0</power>
         <cooldownTime>2</cooldownTime>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>

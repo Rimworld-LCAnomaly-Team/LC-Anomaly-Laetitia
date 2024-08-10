@@ -7,5 +7,7 @@ namespace Laetitia.Def
     public class HediffDefOf
     {
         public static HediffDef LaetitiaGift;
+
+        public static HediffDef LaetitiaGiftAggresive;
     }
 }
