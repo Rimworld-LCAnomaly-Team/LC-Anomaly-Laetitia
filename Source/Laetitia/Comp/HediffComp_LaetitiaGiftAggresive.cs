@@ -13,7 +13,7 @@ namespace Laetitia.Comp
         {
             base.CompPostTick(ref severityAdjustment);
 
-            if(Pawn.Downed)
+            if (Pawn.Downed)
                 SpawnMonster();
         }
 
@@ -30,7 +30,7 @@ namespace Laetitia.Comp
                 return;
             hasSpawned = true;
 
-            if(Pawn != null)
+            if (Pawn != null)
             {
                 int amount = Props.spawnAmount.RandomInRange;
                 for (int i = 0; i < amount; i++)

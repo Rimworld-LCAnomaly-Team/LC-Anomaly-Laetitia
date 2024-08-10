@@ -8,7 +8,6 @@ namespace Laetitia.Def
     {
         public static PawnKindDef Laetitia;
 
-
         public static PawnKindDef LaetitiaMonster;
     }
 }

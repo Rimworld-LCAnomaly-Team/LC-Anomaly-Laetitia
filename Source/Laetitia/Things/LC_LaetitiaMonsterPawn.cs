@@ -29,28 +29,27 @@ namespace Laetitia.Things
         {
             get
             {
-                if(compAbilityAttack == null)
+                if (compAbilityAttack == null)
                 {
-                    return compAbilityAttack = 
+                    return compAbilityAttack =
                         this.abilities.GetAbility(Def.AbilityDefOf.LaetitiaMonster_Attack)
                         .CompOfType<CompAbilityEffect_MonsterAttack>();
                 }
                 return compAbilityAttack;
             }
         }
+
         private CompAbilityEffect_MonsterAttack compAbilityAttack;
 
-
-        public LC_LaetitiaMonsterPawn() 
+        public LC_LaetitiaMonsterPawn()
         {
-            
         }
 
         public override void Tick()
         {
             //Log.Warning(isAttacking.ToString());
 
-            if(isSpawning)
+            if (isSpawning)
             {
                 if (this.Drawer.renderer.CurAnimation == Def.AnimationDefOf.LaetitiaMonster_Spawn
                     && this.Drawer.renderer.renderTree.AnimationTick == 24)
@@ -126,7 +125,7 @@ namespace Laetitia.Things
             if (isDying)
                 return;
 
-            if(!shouldDie)
+            if (!shouldDie)
             {
                 isDying = true;
                 this.Drawer.renderer.SetAnimation(Def.AnimationDefOf.LaetitiaMonster_Dead);
@@ -161,7 +160,6 @@ namespace Laetitia.Things
                 attackDir = ELaetitiaMonsterAttackDir.Right;
                 this.Drawer.renderer.SetAnimation(Def.AnimationDefOf.LaetitiaMonster_AttackR);
             }
-
             else
             {
                 //Log.Warning("触发了左侧攻击技能");

@@ -1,5 +1,4 @@
-﻿using Laetitia.Comp;
-using LCAnomalyLibrary.Misc;
+﻿using LCAnomalyLibrary.Misc;
 using RimWorld;
 using Verse;
 

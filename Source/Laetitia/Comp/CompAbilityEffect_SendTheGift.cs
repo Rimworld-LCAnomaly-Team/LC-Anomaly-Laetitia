@@ -5,7 +5,6 @@ namespace Laetitia.Comp
 {
     public class CompAbilityEffect_SendTheGift : CompAbilityEffect
     {
-
         private new CompProperties_AbilitySendTheGift Props => (CompProperties_AbilitySendTheGift)props;
 
         private Pawn Pawn => parent.pawn;

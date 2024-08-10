@@ -16,9 +16,9 @@ namespace Laetitia.Comp
 
             //Util.GraphicUtil.LaetitiaGift_GetCachedTopGraphic()[1].Draw(Pawn.PositionHeld.ToVector3(), Rot4.South, Pawn);
 
-            if(Pawn.CurJob.def == LCAnomalyCore.Defs.JobDefOf.LC_StudyInteract)
+            if (Pawn.CurJob.def == LCAnomalyCore.Defs.JobDefOf.LC_StudyInteract)
             {
-                if(Pawn.CurJob.GetCachedDriver(Pawn) is JobDriver_LC_StudyInteract driver)
+                if (Pawn.CurJob.GetCachedDriver(Pawn) is JobDriver_LC_StudyInteract driver)
                 {
                     //Log.Warning("携带蕾蒂希娅礼物的Pawn正在进行LC研究");
 

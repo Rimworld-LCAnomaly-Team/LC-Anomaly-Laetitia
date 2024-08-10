@@ -85,7 +85,7 @@ namespace Laetitia.Comp
         protected override void StudyEvent_Normal(Pawn studier)
         {
             var hediff = studier?.health.GetOrAddHediff(Def.HediffDefOf.LaetitiaGift);
-            if(hediff != null)
+            if (hediff != null)
                 hediff.Severity = 1;
         }
 

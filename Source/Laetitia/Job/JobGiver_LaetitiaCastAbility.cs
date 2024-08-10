@@ -15,7 +15,7 @@ namespace Laetitia.Job
             }
 
             LocalTargetInfo targetInfo = user.mindState.meleeThreat;
-            if(targetInfo == null || !targetInfo.HasThing || !ability.CanApplyOn(targetInfo))
+            if (targetInfo == null || !targetInfo.HasThing || !ability.CanApplyOn(targetInfo))
             {
                 return null;
             }
@@ -32,7 +32,7 @@ namespace Laetitia.Job
 
         protected override Verse.AI.Job TryGiveJob(Pawn user)
         {
-            if(user.kindDef == Def.PawnKindDefOf.LaetitiaMonster)
+            if (user.kindDef == Def.PawnKindDefOf.LaetitiaMonster)
                 return this.MeleeAttack(user);
 
             return null;
