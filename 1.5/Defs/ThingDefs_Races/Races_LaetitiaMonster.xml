@@ -21,7 +21,7 @@
       <hasGenders>false</hasGenders>
       <fleshType>EntityMechanical</fleshType>
       <foodType>None</foodType>
-      <hasCorpse>true</hasCorpse>
+      <hasCorpse>false</hasCorpse>
       <lifeExpectancy>1000</lifeExpectancy>
       <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
       <soundCallIntervalRange>60~120</soundCallIntervalRange>

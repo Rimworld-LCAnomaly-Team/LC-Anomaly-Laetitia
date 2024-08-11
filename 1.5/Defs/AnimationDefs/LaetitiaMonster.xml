@@ -808,6 +808,7 @@
   <AnimationDef>
     <defName>LaetitiaMonster_Dead</defName>
     <durationTicks>45</durationTicks>
+    <playWhenDowned>true</playWhenDowned>
     <animationParts>
       <!-- root -->
       <li>

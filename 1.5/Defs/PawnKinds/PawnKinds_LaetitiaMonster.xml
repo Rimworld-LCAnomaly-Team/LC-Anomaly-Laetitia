@@ -9,7 +9,7 @@
     <meleeAttackInfectionPathways>
       <li>EntityAttacked</li>
     </meleeAttackInfectionPathways>
-    <forceDeathOnDowned>false</forceDeathOnDowned>
+    <forceDeathOnDowned>true</forceDeathOnDowned>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BaseLaetitiaMonsterKind">
