@@ -4,5 +4,6 @@
 		<li>Cont</li>
 		<li>1.5</li>
 		<li IfModActive="CETeam.CombatExtended">Extension/1.5/CE</li>
+		<li IfModActive="mlie.showmeyourhands">Extension/1.5/ShowMeYourHands</li>
     </v1.5>
 </loadFolders>
