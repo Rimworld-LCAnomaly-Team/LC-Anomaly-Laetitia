@@ -70,8 +70,8 @@
 		<defName>Bullet_LaetitiaEGO_FMJ</defName>
 		<label>Laetitia EGO bullet</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>15</damageAmountBase>
-			<armorPenetrationSharp>10</armorPenetrationSharp>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationSharp>16</armorPenetrationSharp>
 			<armorPenetrationBlunt>70</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
