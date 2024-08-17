@@ -1,4 +1,5 @@
 ﻿using LCAnomalyLibrary.Comp;
+using LCAnomalyLibrary.Comp.Pawns;
 using LCAnomalyLibrary.Util;
 using RimWorld;
 using Verse;
@@ -37,39 +38,72 @@ namespace Laetitia.Comp
 
         #region 研究与图鉴
 
-        protected override LC_StudyResult CheckFinalStudyQuality(Pawn studier, EAnomalyWorkType workType)
+        protected override float StudySuccessRateCalculate(CompPawnStatus studier, EAnomalyWorkType workType)
         {
-            //每级智力提供5%成功率，10级智力提供50%成功率
-            float successRate_Intellectual = studier.skills.GetSkill(SkillDefOf.Intellectual).Level * 0.05f;
-            //叠加基础成功率，此处是50%，叠加完应是100%
-            float finalSuccessRate = successRate_Intellectual + Props.studySucessRateBase;
+            float baseRate = base.StudySuccessRateCalculate(studier, workType);
+            float workTypeRate = 0;
+            float finalRate = 0;
 
-            //本能，沟通和洞察+10%成功率，压迫-50%成功率
             switch (workType)
             {
                 case EAnomalyWorkType.Instinct:
-                    finalSuccessRate += 0.1f;
+                    //本能：I级40%，II级45%，别的50%
+                    switch (studier.GetPawnStatusELevel(EPawnStatus.Fortitude))
+                    {
+                        case EPawnLevel.I:
+                            workTypeRate = 0.4f;
+                            break;
+                        case EPawnLevel.II:
+                            workTypeRate = 0.45f;
+                            break;
+                        default:
+                            workTypeRate = 0.5f;
+                            break;
+                    }
                     break;
-
                 case EAnomalyWorkType.Insight:
-                    finalSuccessRate += 0.1f;
+                    //洞察：40%
+                    switch (studier.GetPawnStatusELevel(EPawnStatus.Prudence))
+                    {
+                        default:
+                            workTypeRate = 0.4f;
+                            break;
+                    }
                     break;
-
                 case EAnomalyWorkType.Attachment:
-                    finalSuccessRate += 0.1f;
+                    //沟通：I~III级：60%，别的65%
+                    switch (studier.GetPawnStatusELevel(EPawnStatus.Temperance))
+                    {
+                        case EPawnLevel.I:
+                        case EPawnLevel.II:
+                        case EPawnLevel.III:
+                            workTypeRate = 0.6f;
+                            break;
+                        default:
+                            workTypeRate = 0.65f;
+                            break;
+                    }
                     break;
-
                 case EAnomalyWorkType.Repression:
-                    finalSuccessRate -= 0.5f;
+                    //压迫：0%
+                    switch (studier.GetPawnStatusELevel(EPawnStatus.Justice))
+                    {
+                        default:
+                            workTypeRate = 0;
+                            break;
+                    }
                     break;
             }
 
-            //成功率不能超过90%
-            if (finalSuccessRate >= 1f)
-                finalSuccessRate = 0.9f;
+            finalRate = baseRate + workTypeRate;
 
-            return Rand.Chance(finalSuccessRate) ? LC_StudyResult.Good : LC_StudyResult.Normal;
+            //成功率不能超过95%
+            if (finalRate > 0.95f)
+                finalRate = 0.95f;
+
+            return finalRate;
         }
+
 
         public override bool CheckStudierSkillRequire(Pawn studier)
         {
@@ -87,6 +121,8 @@ namespace Laetitia.Comp
             var hediff = studier?.health.GetOrAddHediff(Def.HediffDefOf.LaetitiaGift);
             if (hediff != null)
                 hediff.Severity = 1;
+
+            base.StudyEvent_Normal(studier);
         }
 
         /// <summary>

@@ -87,6 +87,8 @@
     <Compile Include="Comp\CompProperties_AbilityMonsterAttack.cs" />
     <Compile Include="Comp\CompProperties_AbilitySendTheGift.cs" />
     <Compile Include="Comp\CompProperties_Laetitia.cs" />
+    <Compile Include="Comp\CompProperties_Studiable_Laetitia.cs" />
+    <Compile Include="Comp\CompStudiable_Laetitia.cs" />
     <Compile Include="Comp\HediffCompProperties_LaetitiaGift.cs" />
     <Compile Include="Comp\HediffCompProperties_LaetitiaGiftAggresive.cs" />
     <Compile Include="Comp\HediffComp_LaetitiaGift.cs" />
