@@ -104,18 +104,6 @@ namespace Laetitia.Comp
             return finalRate;
         }
 
-
-        public override bool CheckStudierSkillRequire(Pawn studier)
-        {
-            if (studier.skills.GetSkill(SkillDefOf.Intellectual).Level < 4)
-            {
-                //Log.Message($"工作：{studier.Name}的技能{SkillDefOf.Intellectual.label.Translate()}等级不足4，工作固定无法成功");
-                return false;
-            }
-
-            return true;
-        }
-
         protected override void StudyEvent_Normal(Pawn studier)
         {
             var hediff = studier?.health.GetOrAddHediff(Def.HediffDefOf.LaetitiaGift);
