@@ -5,15 +5,13 @@ namespace Laetitia.Comp
 {
     public class CompStudiable_Laetitia : LC_CompStudiable
     {
-        private LC_CompStudyUnlocks compStudyUnlocks => parent.GetComp<LC_CompStudyUnlocks>();
-
         public override float GetWorkSpeedOffset()
         {
-            if (compStudyUnlocks.Completed)
+            if (CompStudyUnlocks.Completed)
             {
                 return 0.08f;
             }
-            else if(compStudyUnlocks.Progress >= 2)
+            else if(CompStudyUnlocks.Progress >= 2)
             {
                 return 0.04f;
             }
@@ -23,11 +21,11 @@ namespace Laetitia.Comp
 
         public override float GetWorkSuccessRateOffset()
         {
-            if (compStudyUnlocks.Completed)
+            if (CompStudyUnlocks.Completed)
             {
                 return 0.08f;
             }
-            else if (compStudyUnlocks.Progress >= 1)
+            else if (CompStudyUnlocks.Progress >= 1)
             {
                 return 0.04f;
             }
