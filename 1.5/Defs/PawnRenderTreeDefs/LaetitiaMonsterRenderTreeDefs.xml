@@ -13,7 +13,7 @@
           <useRottenColor>true</useRottenColor>
           <nodeClass>PawnRenderNode_AnimalPart</nodeClass>
           <children>
-            <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_StillState">
+            <li Class="LCAnomalyCore.Render.PawnRenderNodeProperties_StillState">
               <debugLabel>Bone2</debugLabel>
               <tagDef>Bone2</tagDef>
               <texPath>Things/Pawn/LaetitiaMonster/Attachments/eyes</texPath>
@@ -22,7 +22,7 @@
               <offset>0,0</offset>
               <drawSize>2.5,2.5</drawSize>
             </li>
-            <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_StillState">
+            <li Class="LCAnomalyCore.Render.PawnRenderNodeProperties_StillState">
               <debugLabel>Bone3</debugLabel>
               <tagDef>Bone3</tagDef>
               <texPath>Things/Pawn/LaetitiaMonster/Attachments/mouth</texPath>
@@ -31,7 +31,7 @@
               <offset>0,0</offset>
               <drawSize>2.5,2.5</drawSize>
             </li>
-            <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_StillState">
+            <li Class="LCAnomalyCore.Render.PawnRenderNodeProperties_StillState">
               <debugLabel>r3_1</debugLabel>
               <tagDef>r3_1</tagDef>
               <texPath>Things/Pawn/LaetitiaMonster/Attachments/r3_1</texPath>
@@ -40,7 +40,7 @@
               <offset>0,0</offset>
               <drawSize>2.5,2.5</drawSize>
               <children>
-                <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_StillState">
+                <li Class="LCAnomalyCore.Render.PawnRenderNodeProperties_StillState">
                   <debugLabel>r3_2</debugLabel>
                   <tagDef>r3_2</tagDef>
                   <texPath>Things/Pawn/LaetitiaMonster/Attachments/r3_2</texPath>
@@ -51,7 +51,7 @@
                 </li>
               </children>
             </li>
-            <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_StillState">
+            <li Class="LCAnomalyCore.Render.PawnRenderNodeProperties_StillState">
               <debugLabel>r4_1</debugLabel>
               <tagDef>r4_1</tagDef>
               <texPath>Things/Pawn/LaetitiaMonster/Attachments/r4_1</texPath>
@@ -60,7 +60,7 @@
               <offset>0,0</offset>
               <drawSize>2.5,2.5</drawSize>
               <children>
-                <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_StillState">
+                <li Class="LCAnomalyCore.Render.PawnRenderNodeProperties_StillState">
                   <debugLabel>r4_2</debugLabel>
                   <tagDef>r4_2</tagDef>
                   <texPath>Things/Pawn/LaetitiaMonster/Attachments/r4_2</texPath>
@@ -69,7 +69,7 @@
                   <offset>0,0</offset>
                   <drawSize>1,1</drawSize>
                   <children>
-                    <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_StillState">
+                    <li Class="LCAnomalyCore.Render.PawnRenderNodeProperties_StillState">
                       <debugLabel>r4_3</debugLabel>
                       <tagDef>r4_3</tagDef>
                       <texPath>Things/Pawn/LaetitiaMonster/Attachments/r4_3</texPath>
@@ -82,7 +82,7 @@
                 </li>
               </children>
             </li>
-            <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_StillState">
+            <li Class="LCAnomalyCore.Render.PawnRenderNodeProperties_StillState">
               <debugLabel>r5_1</debugLabel>
               <tagDef>r5_1</tagDef>
               <texPath>Things/Pawn/LaetitiaMonster/Attachments/r5_1</texPath>
@@ -91,7 +91,7 @@
               <offset>0,0</offset>
               <drawSize>2.5,2.5</drawSize>
               <children>
-                <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_StillState">
+                <li Class="LCAnomalyCore.Render.PawnRenderNodeProperties_StillState">
                   <debugLabel>r5_2</debugLabel>
                   <tagDef>r5_2</tagDef>
                   <texPath>Things/Pawn/LaetitiaMonster/Attachments/r5_2</texPath>
@@ -101,7 +101,7 @@
                 </li>
               </children>
             </li>
-            <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_StillState">
+            <li Class="LCAnomalyCore.Render.PawnRenderNodeProperties_StillState">
               <debugLabel>r1_1</debugLabel>
               <tagDef>r1_1</tagDef>
               <texPath>Things/Pawn/LaetitiaMonster/Attachments/r1_1</texPath>
@@ -110,7 +110,7 @@
               <offset>0,0</offset>
               <drawSize>2.5,2.5</drawSize>
               <children>
-                <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_StillState">
+                <li Class="LCAnomalyCore.Render.PawnRenderNodeProperties_StillState">
                   <debugLabel>r1_2</debugLabel>
                   <tagDef>r1_2</tagDef>
                   <texPath>Things/Pawn/LaetitiaMonster/Attachments/r1_2</texPath>
@@ -121,7 +121,7 @@
                 </li>
               </children>
             </li>
-            <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_StillState">
+            <li Class="LCAnomalyCore.Render.PawnRenderNodeProperties_StillState">
               <debugLabel>r2_1</debugLabel>
               <tagDef>r2_1</tagDef>
               <texPath>Things/Pawn/LaetitiaMonster/Attachments/r2_1</texPath>
@@ -130,7 +130,7 @@
               <offset>0,0</offset>
               <drawSize>2.5,2.5</drawSize>
               <children>
-                <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_StillState">
+                <li Class="LCAnomalyCore.Render.PawnRenderNodeProperties_StillState">
                   <debugLabel>r2_2</debugLabel>
                   <tagDef>r2_2</tagDef>
                   <texPath>Things/Pawn/LaetitiaMonster/Attachments/r2_2</texPath>

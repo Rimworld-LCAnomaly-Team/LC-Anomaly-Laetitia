@@ -1,6 +1,6 @@
-﻿using LCAnomalyLibrary.Comp;
-using LCAnomalyLibrary.Comp.Pawns;
-using LCAnomalyLibrary.Util;
+﻿using LCAnomalyCore.Comp;
+using LCAnomalyCore.Comp.Pawns;
+using LCAnomalyCore.Util;
 using RimWorld;
 using Verse;
 
@@ -53,14 +53,17 @@ namespace Laetitia.Comp
                         case EPawnLevel.I:
                             workTypeRate = 0.4f;
                             break;
+
                         case EPawnLevel.II:
                             workTypeRate = 0.45f;
                             break;
+
                         default:
                             workTypeRate = 0.5f;
                             break;
                     }
                     break;
+
                 case EAnomalyWorkType.Insight:
                     //洞察：40%
                     switch (studier.GetPawnStatusELevel(EPawnStatus.Prudence))
@@ -70,6 +73,7 @@ namespace Laetitia.Comp
                             break;
                     }
                     break;
+
                 case EAnomalyWorkType.Attachment:
                     //沟通：I~III级：60%，别的65%
                     switch (studier.GetPawnStatusELevel(EPawnStatus.Temperance))
@@ -79,11 +83,13 @@ namespace Laetitia.Comp
                         case EPawnLevel.III:
                             workTypeRate = 0.6f;
                             break;
+
                         default:
                             workTypeRate = 0.65f;
                             break;
                     }
                     break;
+
                 case EAnomalyWorkType.Repression:
                     //压迫：0%
                     switch (studier.GetPawnStatusELevel(EPawnStatus.Justice))

@@ -1,5 +1,4 @@
-﻿using LCAnomalyLibrary.Comp;
-using RimWorld;
+﻿using LCAnomalyCore.Comp;
 
 namespace Laetitia.Comp
 {
@@ -11,7 +10,7 @@ namespace Laetitia.Comp
             {
                 return 0.08f;
             }
-            else if(CompStudyUnlocks.Progress >= 2)
+            else if (CompStudyUnlocks.Progress >= 2)
             {
                 return 0.04f;
             }

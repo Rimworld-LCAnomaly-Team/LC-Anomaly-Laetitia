@@ -1,6 +1,6 @@
 ﻿using Laetitia.Comp;
 using Laetitia.Effect;
-using LCAnomalyLibrary.Comp;
+using LCAnomalyCore.Comp;
 using RimWorld;
 using UnityEngine;
 using Verse;

@@ -13,7 +13,7 @@
     <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
     <renderNodeProperties>
-      <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_HediffUpHead">
+      <li Class="LCAnomalyCore.Render.PawnRenderNodeProperties_HediffUpHead">
         <texPaths>
           <li>UI/Hediff/HeartNormal</li>
         </texPaths>
@@ -61,7 +61,7 @@
     <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
     <renderNodeProperties>
-      <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_HediffUpHead">
+      <li Class="LCAnomalyCore.Render.PawnRenderNodeProperties_HediffUpHead">
         <texPaths>
           <li>UI/Hediff/HeartBroken</li>
         </texPaths>

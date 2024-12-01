@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <LCAnomalyLibrary.Defs.EntityCodexEntryDef>
+  <LCAnomalyCore.Defs.EntityCodexEntryDef>
   	<defName>Laetitia</defName>
     <label>Laetitia</label>
     <description>Laetitia (O-01-67), also known as A Wee Witch, is a humanoid Abnormality with the appearance of a small girl with pale skin, gray round hair, red tips and red eyes. She wears a pair of golden jingle bells behind the side of her head, a red bonnet, a red ribbon around her neck, a red and white dress with a pair of red shoes, and dark stockings.\nShe moves in a mechanical way, acting like a robot instead of a human. When working with her, the sound of a music box can be heard in the containment room.</description>
@@ -15,6 +15,6 @@
       <li>ExtractLaetitia</li>
     </discoveredResearchProjects> -->
     <orderInCategory>800</orderInCategory>
-  </LCAnomalyLibrary.Defs.EntityCodexEntryDef>
+  </LCAnomalyCore.Defs.EntityCodexEntryDef>
 
 </Defs>

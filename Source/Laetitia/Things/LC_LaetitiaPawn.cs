@@ -1,5 +1,5 @@
 ﻿using Laetitia.Comp;
-using LCAnomalyLibrary.Comp;
+using LCAnomalyCore.Comp;
 
 namespace Laetitia.Things
 {
