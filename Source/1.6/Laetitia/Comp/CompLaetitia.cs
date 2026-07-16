@@ -1,3 +1,4 @@
+using Laetitia.Things;
 using LCAnomalyCore.Comp;
 using LCAnomalyCore.Comp.Pawns;
 using LCAnomalyCore.Util;
@@ -8,13 +9,7 @@ namespace Laetitia.Comp
 {
     public class CompLaetitia : CompAbnormality
     {
-        #region 变量
-
         public new CompProperties_Laetitia Props => (CompProperties_Laetitia)props;
-
-        #endregion 变量
-
-        #region 触发事件
 
         public override void Notify_Killed(Map prevMap, DamageInfo? dinfo = null)
         {
@@ -27,37 +22,46 @@ namespace Laetitia.Comp
         }
 
         /// <summary>
-        /// 绑到收容平台上后的操作
+        /// 绑定到收容平台后恢复机械待机动画。
         /// </summary>
         public override void Notify_Holded()
         {
-            // LC Core 1.6 使用自有图鉴，不再直接调用 Anomaly DLC 图鉴 API。
+            (parent as LC_LaetitiaPawn)?.SetIdleAnimation();
         }
 
-        #endregion 触发事件
+        public override void Notify_Studying(Pawn studier)
+        {
+            base.Notify_Studying(studier);
+            (parent as LC_LaetitiaPawn)?.SetWorkAnimation();
+        }
 
-        #region 研究与图鉴
+        public override void Notify_Studied(Pawn studier, bool interrupted = false)
+        {
+            base.Notify_Studied(studier, interrupted);
+
+            LC_LaetitiaPawn laetitia = parent as LC_LaetitiaPawn;
+            if (laetitia != null && !laetitia.GiftAnimationPlaying)
+            {
+                laetitia.SetIdleAnimation();
+            }
+        }
 
         protected override float StudySuccessRateCalculate(CompPawnStatus studier, EAnomalyWorkType workType)
         {
             float baseRate = base.StudySuccessRateCalculate(studier, workType);
-            float workTypeRate = 0;
-            float finalRate = 0;
+            float workTypeRate;
 
             switch (workType)
             {
                 case EAnomalyWorkType.Instinct:
-                    //本能：I级40%，II级45%，别的50%
                     switch (studier.GetPawnStatusELevel(EPawnStatus.Fortitude))
                     {
                         case EPawnLevel.I:
                             workTypeRate = 0.4f;
                             break;
-
                         case EPawnLevel.II:
                             workTypeRate = 0.45f;
                             break;
-
                         default:
                             workTypeRate = 0.5f;
                             break;
@@ -65,17 +69,10 @@ namespace Laetitia.Comp
                     break;
 
                 case EAnomalyWorkType.Insight:
-                    //洞察：40%
-                    switch (studier.GetPawnStatusELevel(EPawnStatus.Prudence))
-                    {
-                        default:
-                            workTypeRate = 0.4f;
-                            break;
-                    }
+                    workTypeRate = 0.4f;
                     break;
 
                 case EAnomalyWorkType.Attachment:
-                    //沟通：I~III级：60%，别的65%
                     switch (studier.GetPawnStatusELevel(EPawnStatus.Temperance))
                     {
                         case EPawnLevel.I:
@@ -83,7 +80,6 @@ namespace Laetitia.Comp
                         case EPawnLevel.III:
                             workTypeRate = 0.6f;
                             break;
-
                         default:
                             workTypeRate = 0.65f;
                             break;
@@ -91,34 +87,24 @@ namespace Laetitia.Comp
                     break;
 
                 case EAnomalyWorkType.Repression:
-                    //压迫：0%
-                    switch (studier.GetPawnStatusELevel(EPawnStatus.Justice))
-                    {
-                        default:
-                            workTypeRate = 0;
-                            break;
-                    }
+                default:
+                    workTypeRate = 0f;
                     break;
             }
 
-            finalRate = baseRate + workTypeRate;
-
-            //成功率不能超过95%
-            if (finalRate > 0.95f)
-                finalRate = 0.95f;
-
-            return finalRate;
+            return System.Math.Min(baseRate + workTypeRate, 0.95f);
         }
 
         protected override void StudyEvent_Normal(Pawn studier)
         {
-            var hediff = studier?.health.GetOrAddHediff(Def.HediffDefOf.LaetitiaGift);
+            Hediff hediff = studier?.health.GetOrAddHediff(Def.HediffDefOf.LaetitiaGift);
             if (hediff != null)
-                hediff.Severity = 1;
+            {
+                hediff.Severity = 1f;
+            }
 
+            (parent as LC_LaetitiaPawn)?.PlayGiftAnimation();
             base.StudyEvent_Normal(studier);
         }
-
-        #endregion 研究与图鉴
     }
 }

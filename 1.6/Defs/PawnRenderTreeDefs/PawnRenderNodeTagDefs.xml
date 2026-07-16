@@ -47,5 +47,34 @@
   <PawnRenderNodeTagDef>
     <defName>r2_2</defName>
   </PawnRenderNodeTagDef>
+
+  <!-- Laetitia body animation nodes -->
+  <PawnRenderNodeTagDef>
+    <defName>Laetitia_BodyUpper</defName>
+  </PawnRenderNodeTagDef>
+  <PawnRenderNodeTagDef>
+    <defName>Laetitia_EyeLeft</defName>
+  </PawnRenderNodeTagDef>
+  <PawnRenderNodeTagDef>
+    <defName>Laetitia_EyeRight</defName>
+  </PawnRenderNodeTagDef>
+  <PawnRenderNodeTagDef>
+    <defName>Laetitia_Head</defName>
+  </PawnRenderNodeTagDef>
+  <PawnRenderNodeTagDef>
+    <defName>Laetitia_ArmLeft</defName>
+  </PawnRenderNodeTagDef>
+  <PawnRenderNodeTagDef>
+    <defName>Laetitia_ArmRight</defName>
+  </PawnRenderNodeTagDef>
+  <PawnRenderNodeTagDef>
+    <defName>Laetitia_Skirt</defName>
+  </PawnRenderNodeTagDef>
+  <PawnRenderNodeTagDef>
+    <defName>Laetitia_LegLeft</defName>
+  </PawnRenderNodeTagDef>
+  <PawnRenderNodeTagDef>
+    <defName>Laetitia_LegRight</defName>
+  </PawnRenderNodeTagDef>
   
 </Defs>

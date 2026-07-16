@@ -6,6 +6,12 @@ namespace Laetitia.Def
     [DefOf]
     public class AnimationDefOf
     {
+        public static AnimationDef Laetitia_Idle;
+
+        public static AnimationDef Laetitia_Work;
+
+        public static AnimationDef Laetitia_GiveGift;
+
         public static AnimationDef LaetitiaMonster_Walk;
 
         public static AnimationDef LaetitiaMonster_Idle;

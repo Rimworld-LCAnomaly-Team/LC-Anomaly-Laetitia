@@ -6,6 +6,16 @@ namespace Laetitia.Def
     [DefOf]
     public class PawnRenderNodeTagDefOf
     {
+        public static PawnRenderNodeTagDef Laetitia_BodyUpper;
+        public static PawnRenderNodeTagDef Laetitia_EyeLeft;
+        public static PawnRenderNodeTagDef Laetitia_EyeRight;
+        public static PawnRenderNodeTagDef Laetitia_Head;
+        public static PawnRenderNodeTagDef Laetitia_ArmLeft;
+        public static PawnRenderNodeTagDef Laetitia_ArmRight;
+        public static PawnRenderNodeTagDef Laetitia_Skirt;
+        public static PawnRenderNodeTagDef Laetitia_LegLeft;
+        public static PawnRenderNodeTagDef Laetitia_LegRight;
+
         public static PawnRenderNodeTagDef Bone2;
 
         public static PawnRenderNodeTagDef Bone3;

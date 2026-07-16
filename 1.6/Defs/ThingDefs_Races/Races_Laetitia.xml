@@ -45,7 +45,7 @@
       </li>
       <li Class="LCAnomalyCore.Comp.CompProperties_AbnormalityHoldingPlatformTarget">
         <lookForTargetOnEscape>false</lookForTargetOnEscape>
-        <hasAnimation>false</hasAnimation>
+        <hasAnimation>true</hasAnimation>
       </li>
       <li Class="Laetitia.Comp.CompProperties_Studiable_Laetitia">
         <frequencyTicks>60000</frequencyTicks>
