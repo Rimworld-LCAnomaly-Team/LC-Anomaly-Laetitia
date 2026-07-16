@@ -18,9 +18,10 @@ namespace Laetitia.Things
         protected override void Tick()
         {
             //收容状态下丢下就出逃
-            if (CarriedBy == null)
+            if (Spawned && CarriedBy == null)
             {
                 GetComp<CompLaetitia>()?.Notify_Escaped();
+                return;
             }
 
             base.Tick();
