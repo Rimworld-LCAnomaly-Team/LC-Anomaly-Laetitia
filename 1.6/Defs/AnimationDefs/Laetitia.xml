@@ -6,11 +6,11 @@
     <defName>Laetitia_Idle</defName>
     <durationTicks>60</durationTicks>
     <startOnRandomTick>true</startOnRandomTick>
-    <animationParts>
+    <keyframeParts>
       <li>
         <key>Root</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><offset>(0,0,0)</offset></li>
             <li><tick>10</tick><offset>(0,0,0)</offset></li>
@@ -30,7 +30,7 @@
       <li>
         <key>Laetitia_Head</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><angle>0</angle></li>
             <li><tick>10</tick><angle>0</angle></li>
@@ -50,7 +50,7 @@
       <li>
         <key>Laetitia_BodyUpper</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><angle>0</angle></li>
             <li><tick>10</tick><angle>0</angle></li>
@@ -66,7 +66,7 @@
       <li>
         <key>Laetitia_ArmLeft</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><angle>0</angle></li>
             <li><tick>20</tick><angle>0</angle></li>
@@ -82,7 +82,7 @@
       <li>
         <key>Laetitia_ArmRight</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><angle>0</angle></li>
             <li><tick>20</tick><angle>0</angle></li>
@@ -98,7 +98,7 @@
       <li>
         <key>Laetitia_Skirt</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><angle>0</angle></li>
             <li><tick>10</tick><angle>0</angle></li>
@@ -111,18 +111,18 @@
           </keyframes>
         </value>
       </li>
-    </animationParts>
+    </keyframeParts>
   </AnimationDef>
 
   <!-- A quicker synchronized loop while an employee works with her. -->
   <AnimationDef>
     <defName>Laetitia_Work</defName>
     <durationTicks>48</durationTicks>
-    <animationParts>
+    <keyframeParts>
       <li>
         <key>Root</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><offset>(0,0,0)</offset></li>
             <li><tick>7</tick><offset>(0,0,0)</offset></li>
@@ -142,7 +142,7 @@
       <li>
         <key>Laetitia_Head</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><angle>0</angle></li>
             <li><tick>7</tick><angle>0</angle></li>
@@ -162,7 +162,7 @@
       <li>
         <key>Laetitia_ArmLeft</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><offset>(0,0,0)</offset><angle>0</angle></li>
             <li><tick>7</tick><offset>(0,0,0)</offset><angle>0</angle></li>
@@ -178,7 +178,7 @@
       <li>
         <key>Laetitia_ArmRight</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><offset>(0,0,0)</offset><angle>0</angle></li>
             <li><tick>7</tick><offset>(0,0,0)</offset><angle>0</angle></li>
@@ -194,7 +194,7 @@
       <li>
         <key>Laetitia_Skirt</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><angle>0</angle></li>
             <li><tick>7</tick><angle>0</angle></li>
@@ -207,18 +207,18 @@
           </keyframes>
         </value>
       </li>
-    </animationParts>
+    </keyframeParts>
   </AnimationDef>
 
   <!-- One-shot presentation gesture after a normal work result. -->
   <AnimationDef>
     <defName>Laetitia_GiveGift</defName>
     <durationTicks>90</durationTicks>
-    <animationParts>
+    <keyframeParts>
       <li>
         <key>Root</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><offset>(0,0,0)</offset><scale>(1,1,1)</scale></li>
             <li><tick>12</tick><offset>(0,0,0)</offset><scale>(1,1,1)</scale></li>
@@ -238,7 +238,7 @@
       <li>
         <key>Laetitia_Head</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><angle>0</angle></li>
             <li><tick>12</tick><angle>0</angle></li>
@@ -258,7 +258,7 @@
       <li>
         <key>Laetitia_ArmLeft</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><offset>(0,0,0)</offset><angle>0</angle></li>
             <li><tick>12</tick><offset>(0,0,0)</offset><angle>0</angle></li>
@@ -276,7 +276,7 @@
       <li>
         <key>Laetitia_ArmRight</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><offset>(0,0,0)</offset><angle>0</angle></li>
             <li><tick>12</tick><offset>(0,0,0)</offset><angle>0</angle></li>
@@ -294,7 +294,7 @@
       <li>
         <key>Laetitia_Skirt</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><angle>0</angle></li>
             <li><tick>12</tick><angle>0</angle></li>
@@ -314,7 +314,7 @@
       <li>
         <key>Laetitia_LegLeft</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><offset>(0,0,0)</offset><angle>0</angle></li>
             <li><tick>28</tick><offset>(0,0,0)</offset><angle>0</angle></li>
@@ -328,7 +328,7 @@
       <li>
         <key>Laetitia_LegRight</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li><tick>0</tick><offset>(0,0,0)</offset><angle>0</angle></li>
             <li><tick>44</tick><offset>(0,0,0)</offset><angle>0</angle></li>
@@ -339,7 +339,7 @@
           </keyframes>
         </value>
       </li>
-    </animationParts>
+    </keyframeParts>
   </AnimationDef>
 
 </Defs>

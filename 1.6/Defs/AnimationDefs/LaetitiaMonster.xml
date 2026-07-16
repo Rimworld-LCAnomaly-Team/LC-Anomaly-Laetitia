@@ -5,12 +5,12 @@
   <AnimationDef>
     <defName>LaetitiaMonster_Walk</defName>
     <durationTicks>20</durationTicks>
-    <animationParts>
+    <keyframeParts>
       <!-- Root the all -->
       <li>
         <key>Root</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -55,7 +55,7 @@
       <li>
         <key>Bone2</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -96,7 +96,7 @@
       <li>
         <key>Bone3</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -129,7 +129,7 @@
       <li>
         <key>r3_1</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -162,7 +162,7 @@
       <li>
         <key>r1_1</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -191,19 +191,19 @@
           </keyframes>
         </value>
       </li>
-    </animationParts>
+    </keyframeParts>
   </AnimationDef>
 
   <!-- Idle -->
   <AnimationDef>
     <defName>LaetitiaMonster_Idle</defName>
     <durationTicks>20</durationTicks>
-    <animationParts>
+    <keyframeParts>
       <!-- Root the all -->
       <li>
         <key>Root</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -240,7 +240,7 @@
       <li>
         <key>Bone2</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -261,7 +261,7 @@
       <li>
         <key>Bone3</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -290,19 +290,19 @@
           </keyframes>
         </value>
       </li>
-    </animationParts>
+    </keyframeParts>
   </AnimationDef>
 
   <!-- AttackR -->
   <AnimationDef>
     <defName>LaetitiaMonster_AttackR</defName>
     <durationTicks>40</durationTicks>
-    <animationParts>
+    <keyframeParts>
       <!-- Root: hold the wind-up, snap on the real damage tick, then recoil. -->
       <li>
         <key>Root</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -361,7 +361,7 @@
       <li>
         <key>Bone3</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -454,7 +454,7 @@
       <li>
         <key>r3_1</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -475,7 +475,7 @@
       <li>
         <key>r4_1</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -496,7 +496,7 @@
       <li>
         <key>r1_2</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -544,7 +544,7 @@
       <li>
         <key>r2_2</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -594,19 +594,19 @@
           </keyframes>
         </value>
       </li>
-    </animationParts>
+    </keyframeParts>
   </AnimationDef>
 
   <!-- AttackL -->
   <AnimationDef>
     <defName>LaetitiaMonster_AttackL</defName>
     <durationTicks>40</durationTicks>
-    <animationParts>
+    <keyframeParts>
       <!-- Root: keep the anticipation readable and add a two-tick impact hold. -->
       <li>
         <key>Root</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -665,7 +665,7 @@
       <li>
         <key>Bone2</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -738,7 +738,7 @@
       <li>
         <key>Bone3</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -830,7 +830,7 @@
       <li>
         <key>r3_1</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -878,7 +878,7 @@
       <li>
         <key>r3_2</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -926,7 +926,7 @@
       <li>
         <key>r4_3</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -971,19 +971,19 @@
           </keyframes>
         </value>
       </li>
-    </animationParts>
+    </keyframeParts>
   </AnimationDef>
 
   <!-- Spawn -->
   <AnimationDef>
     <defName>LaetitiaMonster_Spawn</defName>
     <durationTicks>25</durationTicks>
-    <animationParts>
+    <keyframeParts>
       <!-- root -->
       <li>
         <key>Root</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -1037,7 +1037,7 @@
       <li>
         <key>Bone3</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -1077,7 +1077,7 @@
           </keyframes>
         </value>
       </li>
-    </animationParts>
+    </keyframeParts>
   </AnimationDef>
 
   <!-- Dead -->
@@ -1085,12 +1085,12 @@
     <defName>LaetitiaMonster_Dead</defName>
     <durationTicks>45</durationTicks>
     <playWhenDowned>true</playWhenDowned>
-    <animationParts>
+    <keyframeParts>
       <!-- root -->
       <li>
         <key>Root</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -1115,7 +1115,7 @@
       <li>
         <key>Bone2</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -1156,7 +1156,7 @@
       <li>
         <key>Bone3</key>
         <value>
-          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <workerType>AnimationWorker_Keyframes</workerType>
           <keyframes>
             <li>
               <tick>0</tick>
@@ -1213,7 +1213,7 @@
           </keyframes>
         </value>
       </li>
-    </animationParts>
+    </keyframeParts>
   </AnimationDef>
 
 </Defs>
