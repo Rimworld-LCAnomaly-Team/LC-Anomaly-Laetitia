@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="Accessory_Laetitia" ParentName="LC_Apparel_AccessoryBase">
+    <defName>Accessory_Laetitia</defName>
+    <label>Accessory (Laetitia)</label>
+    <description>.</description>
+    <thingCategories>
+      <li>LC_Apparel_Accessory_EGO</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Accessory/LaetitiaAccessory</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>5</Beauty>
+    </statBases>
+    <apparel>	
+      <layers>
+        <li>LC_AccessoryHead</li>
+      </layers>
+      <developmentalStageFilter>Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <!-- <li>Mouth</li> -->
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Accessory/LaetitiaAccessory</wornGraphicPath>
+    </apparel>
+    <equippedStatOffsets>
+      <MentalBreakThreshold>-0.10</MentalBreakThreshold>
+      <SocialImpact>0.05</SocialImpact>
+      <EntityStudyRate>0.10</EntityStudyRate>
+    </equippedStatOffsets>
+    <tradeTags>
+      <li>LC_Apparel_Accessory</li>
+    </tradeTags>
+  </ThingDef>
+
+</Defs>
