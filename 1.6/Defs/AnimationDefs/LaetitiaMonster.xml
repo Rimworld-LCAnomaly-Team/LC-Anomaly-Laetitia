@@ -15,12 +15,34 @@
             <li>
               <tick>0</tick>
               <offset>(0,0,0)</offset>
-              <!-- <angle>0</angle>
-              <scale>(1,1,1)</scale> -->
+            </li>
+            <li>
+              <tick>4</tick>
+              <offset>(0,0,0)</offset>
+            </li>
+            <li>
+              <tick>5</tick>
+              <offset>(0.03,0,-0.06)</offset>
+            </li>
+            <li>
+              <tick>9</tick>
+              <offset>(0.03,0,-0.06)</offset>
             </li>
             <li>
               <tick>10</tick>
-              <offset>(0,0,-0.1)</offset>
+              <offset>(-0.03,0,-0.11)</offset>
+            </li>
+            <li>
+              <tick>14</tick>
+              <offset>(-0.03,0,-0.11)</offset>
+            </li>
+            <li>
+              <tick>15</tick>
+              <offset>(0.02,0,-0.04)</offset>
+            </li>
+            <li>
+              <tick>19</tick>
+              <offset>(0.02,0,-0.04)</offset>
             </li>
             <li>
               <tick>20</tick>
@@ -40,8 +62,28 @@
               <offset>(0,0,0)</offset>
             </li>
             <li>
+              <tick>6</tick>
+              <offset>(0,0,0)</offset>
+            </li>
+            <li>
+              <tick>7</tick>
+              <offset>(0,0,-0.05)</offset>
+            </li>
+            <li>
+              <tick>12</tick>
+              <offset>(0,0,-0.05)</offset>
+            </li>
+            <li>
               <tick>13</tick>
               <offset>(0,0,-0.1)</offset>
+            </li>
+            <li>
+              <tick>15</tick>
+              <offset>(0,0,-0.1)</offset>
+            </li>
+            <li>
+              <tick>16</tick>
+              <offset>(0,0,0)</offset>
             </li>
             <li>
               <tick>20</tick>
@@ -94,8 +136,20 @@
               <offset>(0,0,0)</offset>
             </li>
             <li>
-              <tick>10</tick>
+              <tick>8</tick>
+              <offset>(0,0,0)</offset>
+            </li>
+            <li>
+              <tick>9</tick>
               <offset>(0.2,0,0.2)</offset>
+            </li>
+            <li>
+              <tick>11</tick>
+              <offset>(0.2,0,0.2)</offset>
+            </li>
+            <li>
+              <tick>12</tick>
+              <offset>(0,0,0)</offset>
             </li>
             <li>
               <tick>20</tick>
@@ -115,12 +169,20 @@
               <offset>(0,0,0)</offset>
             </li>
             <li>
-              <tick>7</tick>
+              <tick>5</tick>
+              <offset>(0,0,0)</offset>
+            </li>
+            <li>
+              <tick>6</tick>
+              <offset>(0,0,-0.2)</offset>
+            </li>
+            <li>
+              <tick>10</tick>
               <offset>(0,0,-0.2)</offset>
             </li>
             <li>
               <tick>11</tick>
-              <offset>(0,0,-0.2)</offset>
+              <offset>(0,0,0)</offset>
             </li>
             <li>
               <tick>20</tick>
@@ -148,8 +210,24 @@
               <offset>(0,0,0)</offset>
             </li>
             <li>
-              <tick>10</tick>
+              <tick>7</tick>
+              <offset>(0,0,0)</offset>
+            </li>
+            <li>
+              <tick>8</tick>
+              <offset>(0,0,-0.07)</offset>
+            </li>
+            <li>
+              <tick>13</tick>
+              <offset>(0,0,-0.07)</offset>
+            </li>
+            <li>
+              <tick>14</tick>
               <offset>(0,0,-0.1)</offset>
+            </li>
+            <li>
+              <tick>15</tick>
+              <offset>(0,0,0)</offset>
             </li>
             <li>
               <tick>20</tick>
@@ -220,6 +298,65 @@
     <defName>LaetitiaMonster_AttackR</defName>
     <durationTicks>40</durationTicks>
     <animationParts>
+      <!-- Root: hold the wind-up, snap on the real damage tick, then recoil. -->
+      <li>
+        <key>Root</key>
+        <value>
+          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <keyframes>
+            <li>
+              <tick>0</tick>
+              <offset>(0,0,0)</offset>
+              <scale>(1,1,1)</scale>
+            </li>
+            <li>
+              <tick>15</tick>
+              <offset>(0,0,0)</offset>
+              <scale>(1,1,1)</scale>
+            </li>
+            <li>
+              <tick>16</tick>
+              <offset>(0,0,-0.06)</offset>
+              <scale>(1.04,1,0.95)</scale>
+            </li>
+            <li>
+              <tick>22</tick>
+              <offset>(0,0,-0.06)</offset>
+              <scale>(1.04,1,0.95)</scale>
+            </li>
+            <li>
+              <tick>23</tick>
+              <offset>(0.05,0,0.05)</offset>
+              <scale>(0.96,1,1.06)</scale>
+            </li>
+            <li>
+              <tick>24</tick>
+              <offset>(0.05,0,0.05)</offset>
+              <scale>(0.96,1,1.06)</scale>
+            </li>
+            <li>
+              <tick>25</tick>
+              <offset>(-0.03,0,-0.03)</offset>
+              <scale>(1.03,1,0.97)</scale>
+            </li>
+            <li>
+              <tick>28</tick>
+              <offset>(-0.03,0,-0.03)</offset>
+              <scale>(1.03,1,0.97)</scale>
+            </li>
+            <li>
+              <tick>29</tick>
+              <offset>(0,0,0)</offset>
+              <scale>(1,1,1)</scale>
+            </li>
+            <li>
+              <tick>40</tick>
+              <offset>(0,0,0)</offset>
+              <scale>(1,1,1)</scale>
+            </li>
+          </keyframes>
+        </value>
+      </li>
       <!-- Bone3 the mouth -->
       <li>
         <key>Bone3</key>
@@ -308,7 +445,7 @@
             </li>
             <li>
               <tick>40</tick>
-              <offset>(-0.03,0,0.03)</offset>
+              <offset>(0,0,0)</offset>
             </li>
           </keyframes>
         </value>
@@ -366,18 +503,39 @@
               <offset>(0,0,0)</offset>
             </li>
             <li>
-              <tick>20</tick>
+              <tick>22</tick>
               <offset>(0,0,0)</offset>
+              <scale>(1,1,1)</scale>
             </li>
             <li>
               <tick>23</tick>
-              <offset>(-0.05,0,-0.05)</offset>
-              <scale>(1.2,1,1.2)</scale>
+              <offset>(-0.09,0,-0.07)</offset>
+              <scale>(1.3,1,1.3)</scale>
+            </li>
+            <li>
+              <tick>24</tick>
+              <offset>(-0.09,0,-0.07)</offset>
+              <scale>(1.3,1,1.3)</scale>
+            </li>
+            <li>
+              <tick>25</tick>
+              <offset>(0.03,0,0.02)</offset>
+              <scale>(0.95,1,0.95)</scale>
+            </li>
+            <li>
+              <tick>28</tick>
+              <offset>(0.03,0,0.02)</offset>
+              <scale>(0.95,1,0.95)</scale>
+            </li>
+            <li>
+              <tick>29</tick>
+              <offset>(0,0,0)</offset>
+              <scale>(1,1,1)</scale>
             </li>
             <li>
               <tick>40</tick>
-              <offset>(-0.05,0,-0.05)</offset>
-              <scale>(1.2,1,1.2)</scale>
+              <offset>(0,0,0)</offset>
+              <scale>(1,1,1)</scale>
             </li>
           </keyframes>
         </value>
@@ -399,22 +557,32 @@
               <scale>(1,1,1)</scale>
             </li>
             <li>
-              <tick>18</tick>
+              <tick>22</tick>
               <offset>(-0.06,0,-0.05)</offset>
               <scale>(1.1,1,1.1)</scale>
             </li>
             <li>
               <tick>23</tick>
-              <offset>(-0.06,0,-0.05)</offset>
-              <scale>(1.1,1,1.1)</scale>
+              <offset>(-0.22,0,-0.07)</offset>
+              <scale>(1.5,1,1.5)</scale>
             </li>
             <li>
               <tick>24</tick>
-              <offset>(-0.2,0,-0.05)</offset>
-              <scale>(1.4,1,1.4)</scale>
+              <offset>(-0.22,0,-0.07)</offset>
+              <scale>(1.5,1,1.5)</scale>
             </li>
             <li>
-              <tick>32</tick>
+              <tick>25</tick>
+              <offset>(0.04,0,0.02)</offset>
+              <scale>(0.94,1,0.94)</scale>
+            </li>
+            <li>
+              <tick>28</tick>
+              <offset>(0.04,0,0.02)</offset>
+              <scale>(0.94,1,0.94)</scale>
+            </li>
+            <li>
+              <tick>29</tick>
               <offset>(0,0,0)</offset>
               <scale>(1,1,1)</scale>
             </li>
@@ -434,6 +602,65 @@
     <defName>LaetitiaMonster_AttackL</defName>
     <durationTicks>40</durationTicks>
     <animationParts>
+      <!-- Root: keep the anticipation readable and add a two-tick impact hold. -->
+      <li>
+        <key>Root</key>
+        <value>
+          <workerClass>AnimationWorker_Keyframes</workerClass>
+          <keyframes>
+            <li>
+              <tick>0</tick>
+              <offset>(0,0,0)</offset>
+              <scale>(1,1,1)</scale>
+            </li>
+            <li>
+              <tick>18</tick>
+              <offset>(0,0,0)</offset>
+              <scale>(1,1,1)</scale>
+            </li>
+            <li>
+              <tick>19</tick>
+              <offset>(0,0,-0.07)</offset>
+              <scale>(1.05,1,0.94)</scale>
+            </li>
+            <li>
+              <tick>25</tick>
+              <offset>(0,0,-0.07)</offset>
+              <scale>(1.05,1,0.94)</scale>
+            </li>
+            <li>
+              <tick>26</tick>
+              <offset>(-0.05,0,0.06)</offset>
+              <scale>(0.95,1,1.07)</scale>
+            </li>
+            <li>
+              <tick>27</tick>
+              <offset>(-0.05,0,0.06)</offset>
+              <scale>(0.95,1,1.07)</scale>
+            </li>
+            <li>
+              <tick>28</tick>
+              <offset>(0.03,0,-0.03)</offset>
+              <scale>(1.03,1,0.97)</scale>
+            </li>
+            <li>
+              <tick>31</tick>
+              <offset>(0.03,0,-0.03)</offset>
+              <scale>(1.03,1,0.97)</scale>
+            </li>
+            <li>
+              <tick>32</tick>
+              <offset>(0,0,0)</offset>
+              <scale>(1,1,1)</scale>
+            </li>
+            <li>
+              <tick>40</tick>
+              <offset>(0,0,0)</offset>
+              <scale>(1,1,1)</scale>
+            </li>
+          </keyframes>
+        </value>
+      </li>
       <!-- Bone2 the eyes -->
       <li>
         <key>Bone2</key>
@@ -595,7 +822,7 @@
             </li>
             <li>
               <tick>40</tick>
-              <offset>(-0.03,0,0.03)</offset>
+              <offset>(0,0,0)</offset>
             </li>
           </keyframes>
         </value>
@@ -614,12 +841,36 @@
               <offset>(0,0,0)</offset>
             </li>
             <li>
-              <tick>14</tick>
+              <tick>13</tick>
               <offset>(0.2,0,0.2)</offset>
             </li>
             <li>
-              <tick>40</tick>
+              <tick>25</tick>
               <offset>(0.2,0,0.2)</offset>
+            </li>
+            <li>
+              <tick>26</tick>
+              <offset>(0.26,0,0.24)</offset>
+            </li>
+            <li>
+              <tick>27</tick>
+              <offset>(0.26,0,0.24)</offset>
+            </li>
+            <li>
+              <tick>28</tick>
+              <offset>(-0.03,0,-0.03)</offset>
+            </li>
+            <li>
+              <tick>31</tick>
+              <offset>(-0.03,0,-0.03)</offset>
+            </li>
+            <li>
+              <tick>32</tick>
+              <offset>(0,0,0)</offset>
+            </li>
+            <li>
+              <tick>40</tick>
+              <offset>(0,0,0)</offset>
             </li>
           </keyframes>
         </value>
@@ -635,22 +886,32 @@
               <scale>(1,1,1)</scale>
             </li>
             <li>
-              <tick>19</tick>
+              <tick>25</tick>
               <offset>(0,0,0)</offset>
               <scale>(1,1,1)</scale>
             </li>
             <li>
-              <tick>20</tick>
-              <offset>(0.07,0,-0.07)</offset>
-              <scale>(1.2,1,1.2)</scale>
+              <tick>26</tick>
+              <offset>(0.1,0,-0.09)</offset>
+              <scale>(1.35,1,1.35)</scale>
             </li>
             <li>
-              <tick>29</tick>
-              <offset>(0.07,0,-0.07)</offset>
-              <scale>(1.2,1,1.2)</scale>
+              <tick>27</tick>
+              <offset>(0.1,0,-0.09)</offset>
+              <scale>(1.35,1,1.35)</scale>
             </li>
             <li>
-              <tick>30</tick>
+              <tick>28</tick>
+              <offset>(-0.03,0,0.02)</offset>
+              <scale>(0.95,1,0.95)</scale>
+            </li>
+            <li>
+              <tick>31</tick>
+              <offset>(-0.03,0,0.02)</offset>
+              <scale>(0.95,1,0.95)</scale>
+            </li>
+            <li>
+              <tick>32</tick>
               <offset>(0,0,0)</offset>
               <scale>(1,1,1)</scale>
             </li>
@@ -673,17 +934,32 @@
               <scale>(1,1,1)</scale>
             </li>
             <li>
-              <tick>23</tick>
+              <tick>25</tick>
               <offset>(0,0,0)</offset>
               <scale>(1,1,1)</scale>
             </li>
             <li>
-              <tick>24</tick>
-              <offset>(0.18,0,-0.02)</offset>
-              <scale>(1.5,1,1.5)</scale>
+              <tick>26</tick>
+              <offset>(0.24,0,-0.03)</offset>
+              <scale>(1.65,1,1.65)</scale>
             </li>
             <li>
-              <tick>35</tick>
+              <tick>27</tick>
+              <offset>(0.24,0,-0.03)</offset>
+              <scale>(1.65,1,1.65)</scale>
+            </li>
+            <li>
+              <tick>28</tick>
+              <offset>(-0.04,0,0.02)</offset>
+              <scale>(0.94,1,0.94)</scale>
+            </li>
+            <li>
+              <tick>31</tick>
+              <offset>(-0.04,0,0.02)</offset>
+              <scale>(0.94,1,0.94)</scale>
+            </li>
+            <li>
+              <tick>32</tick>
               <offset>(0,0,0)</offset>
               <scale>(1,1,1)</scale>
             </li>
