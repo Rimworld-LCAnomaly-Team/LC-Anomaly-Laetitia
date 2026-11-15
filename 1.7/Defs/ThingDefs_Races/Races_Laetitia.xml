@@ -19,7 +19,7 @@
       <intelligence>ToolUser</intelligence>
       <needsRest>false</needsRest>
       <hasGenders>false</hasGenders>
-      <fleshType>EntityMechanical</fleshType>
+      <fleshType>LC_AbnormalityMechanical</fleshType>
       <foodType>None</foodType>
       <hasCorpse>false</hasCorpse>
       <lifeExpectancy>1000</lifeExpectancy>

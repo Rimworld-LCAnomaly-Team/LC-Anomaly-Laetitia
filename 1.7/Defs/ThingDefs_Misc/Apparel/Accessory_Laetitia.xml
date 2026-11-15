@@ -28,7 +28,7 @@
     <equippedStatOffsets>
       <MentalBreakThreshold>-0.10</MentalBreakThreshold>
       <SocialImpact>0.05</SocialImpact>
-      <EntityStudyRate>0.10</EntityStudyRate>
+      <LC_AbnormalityStudyRate>0.10</LC_AbnormalityStudyRate>
     </equippedStatOffsets>
     <tradeTags>
       <li>LC_Apparel_Accessory</li>

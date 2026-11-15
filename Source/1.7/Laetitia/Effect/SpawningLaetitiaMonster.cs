@@ -14,8 +14,8 @@ namespace Laetitia.Effect
         private void DoDefaultFX()
         {
             //播放血肉特效，记录动画播放完的时间
-            Effecter effecter = EffecterDefOf.MeatExplosionExtraLarge.SpawnMaintained(base.Position, base.Map);
-            completeTick = base.TickSpawned + effecter.ticksLeft + 120;
+            LCAnomalyCore.Util.AbnormalityUtility.Burst(Position, Map, 2f);
+            completeTick = base.TickSpawned + 120;
 
             hasInited = true;
         }
@@ -29,7 +29,7 @@ namespace Laetitia.Effect
             }
 
             //生成蕾蒂希娅的朋友
-            Pawn monster = PawnGenerator.GeneratePawn(Def.PawnKindDefOf.LaetitiaMonster, Faction.OfEntities);
+            Pawn monster = PawnGenerator.GeneratePawn(Def.PawnKindDefOf.LaetitiaMonster, LCAnomalyCore.Util.LCContainmentUtility.AbnormalityFaction);
             GenSpawn.Spawn(monster, base.Position, base.MapHeld);
 
             //销毁自己

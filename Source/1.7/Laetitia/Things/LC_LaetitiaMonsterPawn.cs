@@ -166,7 +166,7 @@ namespace Laetitia.Things
         {
             if (!target.Dead)
             {
-                EffecterDefOf.MeatExplosionSmall.SpawnMaintained(target.PositionHeld, target.MapHeld);
+                LCAnomalyCore.Util.AbnormalityUtility.Burst(target.PositionHeld, target.MapHeld);
                 target.TakeDamage(CompAbilityAttack.StunDInfo);
                 target.TakeDamage(CompAbilityAttack.AttackDInfo);
             }

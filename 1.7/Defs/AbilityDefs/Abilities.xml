@@ -19,7 +19,7 @@
     </verbProperties>
     <comps>
       <li Class="CompProperties_AbilityFleckOnTarget">
-        <fleckDef>MeatExplosionSplatter</fleckDef>
+        <fleckDef>LC_AbnormalitySplatter</fleckDef>
       </li>
     </comps>
   </AbilityDef>

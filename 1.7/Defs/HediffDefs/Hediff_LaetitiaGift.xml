@@ -29,7 +29,7 @@
         <nextSpasmTicksRange>600~600</nextSpasmTicksRange>
         <drawData>
           <scaleOffsetByBodySize>false</scaleOffsetByBodySize>
-          <useBodyPartAnchor>true</useBodyPartAnchor>
+          <useBodyPartAnchor>false</useBodyPartAnchor>
           <defaultData>
             <layer>49</layer>
             <offset>(0, 0, 1.2)</offset>
@@ -77,7 +77,7 @@
         <nextSpasmTicksRange>600~600</nextSpasmTicksRange>
         <drawData>
           <scaleOffsetByBodySize>false</scaleOffsetByBodySize>
-          <useBodyPartAnchor>true</useBodyPartAnchor>
+          <useBodyPartAnchor>false</useBodyPartAnchor>
           <defaultData>
             <layer>49</layer>
             <offset>(0, 0, 1.2)</offset>
