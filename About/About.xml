@@ -4,9 +4,8 @@
 	<author>DarthCY</author>
 	<packageId>DarthCY.LC.Laetitia</packageId>
 	<supportedVersions>
-		<li>1.6</li>
-	  <li>1.7</li>
-	</supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
 	<description>The Laetitia Anomaly from LobotomyCorporation.</description>
 	<url>https://github.com/Rimworld-LCAnomaly-Team/LC-Anomaly-Laetitia</url>
 	<modDependencies>

@@ -398,7 +398,6 @@ FodyWeavers.xsd
 *.sln.iml
 
 # Local DLL reference paths
-/Source/1.6/Laetitia/Laetitia.DllReferences.props
 
 # .NET 10 build intermediates
 **/obj/
