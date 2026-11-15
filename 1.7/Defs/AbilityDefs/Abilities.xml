@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- LaetitiaMonster_AttackBase -->
+  <AbilityDef Name="LaetitiaMonster_AttackBase" ParentName="AbilityTouchBase" Abstract="True">
+    <cooldownTicksRange>120</cooldownTicksRange>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <warmupTime>0</warmupTime>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>MeatExplosionSplatter</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- LaetitiaMonster_Attack -->
+  <AbilityDef ParentName="LaetitiaMonster_AttackBase">
+    <defName>LaetitiaMonster_Attack</defName>
+    <label>Penetrate Attack</label>
+    <description>You should not see this.</description>
+    <comps>
+      <li Class="Laetitia.Comp.CompProperties_AbilityMonsterAttack" >
+        <damageRange>10.0~15.0</damageRange>
+        <armorPenetrationRange>0.10~0.15</armorPenetrationRange>
+        <stunTimeRange>1.0~1.5</stunTimeRange>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>

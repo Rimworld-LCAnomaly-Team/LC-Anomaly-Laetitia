@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <LCAnomalyCore.Defs.ThingDef_AbnormalityEntity_Spawn ParentName="EtherealThingBase">
+    <defName>DyingLaetitia</defName>
+    <selectable>false</selectable>
+    <tickerType>Normal</tickerType>
+    <thingClass>Laetitia.Effect.DyingLaetitia</thingClass>
+    <drawOffscreen>true</drawOffscreen>
+  </LCAnomalyCore.Defs.ThingDef_AbnormalityEntity_Spawn>
+
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>SpawningLaetitiaMonster</defName>
+    <selectable>false</selectable>
+    <tickerType>Normal</tickerType>
+    <thingClass>Laetitia.Effect.SpawningLaetitiaMonster</thingClass>
+    <drawOffscreen>true</drawOffscreen>
+  </ThingDef>
+
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>DyingLaetitiaMonster</defName>
+    <selectable>false</selectable>
+    <tickerType>Normal</tickerType>
+    <thingClass>Laetitia.Effect.DyingLaetitiaMonster</thingClass>
+    <drawOffscreen>true</drawOffscreen>
+  </ThingDef>
+
+</Defs>
